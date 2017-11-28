@@ -1,2 +1,2 @@
-# odorousbeast.github.io
-theOdorousBeastFromUB313 Earth-Life Blog
+# odmk.github.io
+the Odorous Beast From UB313 Earth-Life Blog
