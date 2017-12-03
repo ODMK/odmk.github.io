@@ -1,27 +1,2632 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>ODMK - The Beast Ov Eris - UB313</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/bio">Bio</a></li>
-        		<li><a href="/transmission">Transmissions</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>ODMK - Elliot Schei</h1>
-          <p>I am an Engineer specializing in SoC, FPGA, Embedded Systems and DSP programming. I work at <em>ZoTech</em> in Tokyo. <a href="/bio">Bio...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:elliot.schei@zotechgroup.com">email</a></li>
-        		<li><a href="https://github.com/ODMK">github.com/odmk</a></li>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Jirobata Programming Industries :: equations</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Audio Engineering</title>
+<meta name="description" content="Frequency Manipulation" />
+<meta name="keywords" content="Tokyo Japan" />
+<meta name="keywords" content="DSP, Audio Processing, Frequency Domain, Audio Synthesis, Embedded Programming, FPGA, Embedded System Design, Audio Programming" />
+<meta name="author" content="Elliot Schei"
+<meta name="robots" content="index, follow" />
+	    
+	    
+	<!--***********************************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/*****Javascript begin*****************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/************************************************************************************************************************************-->	
+	
+	<SCRIPT language="JavaScript">
+		
+	
+	
+	//******************************************************************
+	/*variable declaration*/	
+	var japanese=new Boolean();	
+	
+	
+	/*odmk: change between English and Japanese*/
+	
+	function odmkInit()
+	{
+		this.odmkCurrent="odmkInit";
+		japanese=0;
+		this.useJapanese(0);
+		return;
+	}
+	
+	function useJapanese(JorE)
+	{
+	   japanese = JorE;
+	   if (japanese == 1)
+		{this.odmkLanguage="Japanese";
+			document.getElementById('odmkHeaderEn').style.display = 'none';
+			document.getElementById('odmkHeaderJp').style.display = 'block';
+			
+			document.getElementById('odmkTitleEn').style.display = 'none';
+			document.getElementById('odmkTitleJp').style.display = 'block';
+			
+			//document.getElementById('odmkSubTitleEn').style.display = 'none';
+			//document.getElementById('odmkSubTitleJp').style.display = 'block';
+			
+			//document.getElementById('abstractHeaderEn').style.display = 'none';
+			//document.getElementById('abstractHeaderJp').style.display = 'block';
+			
+			document.getElementById('contentAbstractEn').style.display = 'none';
+			document.getElementById('contentAbstractJp').style.display = 'block';
+			
+            document.getElementById('selectEn').style.display = 'none';
+			document.getElementById('selectJp').style.display = 'block';			
+			
+			//document.getElementById('mainHeaderEn').style.display = 'none';
+			//document.getElementById('mainHeaderJp').style.display = 'block';
+
+			document.getElementById('contentXfadeEn').style.display = 'none';
+			document.getElementById('contentXfadeJp').style.display = 'block';
+			
+			document.getElementById('contentChebyshevEn').style.display = 'none';
+			document.getElementById('contentChebyshevJp').style.display = 'block';			
+			
+			document.getElementById('contentDDSEn').style.display = 'none';
+			document.getElementById('contentDDSJp').style.display = 'block';
+			
+			document.getElementById('contentDFTEn').style.display = 'none';
+			document.getElementById('contentDFTJp').style.display = 'block';
+			
+			document.getElementById('contentDFTPropEn').style.display = 'none';
+			document.getElementById('contentDFTPropJp').style.display = 'block';
+
+			document.getElementById('contentSlidingDFTEn').style.display = 'none';
+			document.getElementById('contentSlidingDFTJp').style.display = 'block';
+			
+			document.getElementById('contentPVEn').style.display = 'none';
+			document.getElementById('contentPVJp').style.display = 'block';
+			
+			document.getElementById('contentDopplerEn').style.display = 'none';
+			document.getElementById('contentDopplerJp').style.display = 'block';
+			
+			document.getElementById('contentNewtonDivEn').style.display = 'none';
+			document.getElementById('contentNewtonDivJp').style.display = 'block';
+			
+		    document.getElementById('contentGeneralWaveEqnEn').style.display = 'none';
+		    document.getElementById('contentGeneralWaveEqnJp').style.display = 'block';    
+		    
+		    document.getElementById('contentAcousticWaveEqnEn').style.display = 'none';
+		    document.getElementById('contentAcousticWaveEqnJp').style.display = 'block';
+		    
+		    document.getElementById('contentSphericalWaveEqnEn').style.display = 'none';
+		    document.getElementById('contentSphericalWaveEqnJp').style.display = 'block';
+		    
+		    document.getElementById('contentSphericalHarmonicsEn').style.display = 'none';
+		    document.getElementById('contentSphericalHarmonicsJp').style.display = 'block';			
+			
+			document.getElementById('contentElectroMagEn').style.display = 'none';
+			document.getElementById('contentElectroMagJp').style.display = 'block';
+			
+			document.getElementById('contentQMEn').style.display = 'none';
+			document.getElementById('contentQMJp').style.display = 'block';
+						
+		}			
+		else
+		{this.odmkLanguage="English";		
+			document.getElementById('odmkHeaderEn').style.display = 'block';
+			document.getElementById('odmkHeaderJp').style.display = 'none';
+			
+			document.getElementById('odmkTitleEn').style.display = 'block';
+			document.getElementById('odmkTitleJp').style.display = 'none';
+			
+			//document.getElementById('odmkSubTitleEn').style.display = 'block';
+			//document.getElementById('odmkSubTitleJp').style.display = 'none';
+			
+			//document.getElementById('abstractHeaderEn').style.display = 'block';
+			//document.getElementById('abstractHeaderJp').style.display = 'none';
+			
+			document.getElementById('contentAbstractEn').style.display = 'block';
+			document.getElementById('contentAbstractJp').style.display = 'none';
+			
+            document.getElementById('selectEn').style.display = 'block';
+			document.getElementById('selectJp').style.display = 'none';			
+			
+			//document.getElementById('mainHeaderEn').style.display = 'block';
+			//document.getElementById('mainHeaderJp').style.display = 'none';
+			
+			document.getElementById('contentXfadeEn').style.display = 'block';
+			document.getElementById('contentXfadeJp').style.display = 'none';
+
+			document.getElementById('contentChebyshevEn').style.display = 'block';
+			document.getElementById('contentChebyshevJp').style.display = 'none';
+			
+			document.getElementById('contentDDSEn').style.display = 'block';
+			document.getElementById('contentDDSJp').style.display = 'none';
+			
+			document.getElementById('contentDFTEn').style.display = 'block';
+			document.getElementById('contentDFTJp').style.display = 'none';
+			
+			document.getElementById('contentDFTPropEn').style.display = 'block';
+			document.getElementById('contentDFTPropJp').style.display = 'none';
+
+			document.getElementById('contentSlidingDFTEn').style.display = 'block';
+			document.getElementById('contentSlidingDFTJp').style.display = 'none';
+			
+			document.getElementById('contentPVEn').style.display = 'block';
+			document.getElementById('contentPVJp').style.display = 'none';
+			
+			document.getElementById('contentDopplerEn').style.display = 'block';
+			document.getElementById('contentDopplerJp').style.display = 'none';
+			
+			document.getElementById('contentNewtonDivEn').style.display = 'block';
+			document.getElementById('contentNewtonDivJp').style.display = 'none';
+			
+		    document.getElementById('contentGeneralWaveEqnEn').style.display = 'block';
+		    document.getElementById('contentGeneralWaveEqnJp').style.display = 'none';
+		    
+		    document.getElementById('contentAcousticWaveEqnEn').style.display = 'block';
+		    document.getElementById('contentAcousticWaveEqnJp').style.display = 'none';
+		   
+		    document.getElementById('contentSphericalWaveEqnEn').style.display = 'block';
+		    document.getElementById('contentSphericalWaveEqnJp').style.display = 'none';
+		  
+		    document.getElementById('contentSphericalHarmonicsEn').style.display = 'block';
+		    document.getElementById('contentSphericalHarmonicsJp').style.display = 'none';			
+			
+			document.getElementById('contentElectroMagEn').style.display = 'block';
+			document.getElementById('contentElectroMagJp').style.display = 'none';
+			
+			document.getElementById('contentQMEn').style.display = 'block';
+			document.getElementById('contentQMJp').style.display = 'none';			
+			
+		}
+	   return;
+	}
+	
+	
+	</SCRIPT>        
+	  
+	  
+	<!--***********************************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/*****Javascript end*******************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/**************************************************************************************************************************************/  
+	
+	
+	
+	/**************************************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/*****CSS begin************************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/************************************************************************************************************************************-->
+		
+		
+	<style type="text/css" media="screen, print, projection">
+	
+	
+	/*body{background-color : 000015}*/
+	/**/
+	
+	html,
+	
+	.odmkBody {width:960px; margin:0 auto; background:#000000;}
+	
+	/*body {margin:0; padding:0; color:#000015; background:#000015;}*/
+	/*a7a09a*/
+	
+	/*red / magenta color scheme*/
+	/*a:link {color:#FF0000;}    /* unvisited link */
+	/*a:visited {color:#00FF00;} /* visited link */
+	/*a:hover {color:#FF00FF;}   /* mouse over link */
+	/*a:active {color:#0000FF;}  /* selected link */
+	
+	/*darkblue / aqua color scheme*/
+	a:link {color:#778899;}    /* unvisited link #777777*/
+	a:visited {color:#696969;} /* visited link */
+	a:hover {color:#CC0033;}   /* mouse over link */
+	a:active {color:#FF0000;}  /* selected link */
+
+	
+	.lang {
+	    margin:0;
+	    padding:0;
+	    background:#000000;
+	    text-align: center;
+	    border:0px solid #42432d;
+	    border-width:0px 0;
+	    }
+	    
+	#lang li {display:inline; padding:0; margin:0;}
+	#lang a:link,
+	#lang a:visited {
+	    color:#aaa;
+	    background:#151616;
+	    padding:3px 5px 2px 5px;
+	    text-align: center;
+	    width:auto;
+	    border-right:0px solid #42432d;
+	    text-decoration:none;
+	    font:bold 1em/1em Arial, Helvetica, sans-serif;
+	    text-transform:uppercase;
+	    text-shadow: 2px 2px 2px #555;
+	    }
+	#lang li:first-child a {border-left:0px solid #42432d;}	
+	#lang a:hover,
+	#lang a:focus {color:#fff; background:#151616;}
+	
+	
+	#odmkHeaderEn {padding:10px; text-align:center; font-family:verdana; font-size:160%; font-weight:bold; color:#336699}	/*color:#BDB76B;#8FBC8F;#2F4F4F*/
+	#odmkHeaderJp {padding:10px; text-align:center; font-family:verdana; font-size:160%; font-weight:bold; color:#336699}	/*color:#770055;*/
+	
+	#odmkTitleEn {padding:10px; text-align:center; font-family:verdana; font-size:180%; font-weight:bold; color:#FFFFFF}
+	#odmkTitleJp {padding:10px; text-align:center; font-family:verdana; font-size:180%; font-weight:bold; color:#FFFFFF}	/*color:#770055;*/
+	
+	#odmkSubTitleEn {padding:10px; text-align:center; font-family:verdana; font-size:120%; font-weight:bold; color:#FFFFFF}
+	#odmkSubTitleJp {padding:10px; text-align:center; font-family:verdana; font-size:120%; font-weight:bold; color:#FFFFFF}	/*color:#770055;*/
+
+	/*#abstractHeaderEn {padding:10px; font-family:verdana; font-size:150%; font-weight:bold; color:#008B8B}*/
+	/*#abstractHeaderJp {padding:10px; font-family:verdana; font-size:150%; font-weight:bold; color:#008B8B}	/*color:#770055;*/
+		
+	#contentAbstractEn {padding:3px; text-align:center;　font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentAbstractJp {padding:3px; text-align:center;　font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}	/*color:#770055;*/
+	
+    #selectEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF; border-top:1px solid #336699; border-bottom:1px solid #336699}
+	#selectJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF; border-top:1px solid #336699; border-bottom:1px solid #336699}
+	
+	/*#mainHeaderEn {padding:10px; font-family:verdana; font-size:150%; font-weight:bold; color:#008B8B}
+	/*#mainHeaderJp {padding:10px; font-family:verdana; font-size:150%; font-weight:bold; color:#008B8B}	/*color:#770055;*/
+		
+	.contentMainEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	.contentMainJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}	/*color:#770055;*/
+
+	#contentXfadeEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentXfadeJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	
+	#contentChebyshevEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentChebyshevJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}	
+	
+	#contentDDSEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentDDSJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}	
+	
+	#contentDFTEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentDFTJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	
+	#contentDFTPropEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentDFTPropJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}	
+	
+	#contentSlidingDFTEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentSlidingDFTJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}	
+	
+	#contentSTFTEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentSTFTJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+
+	#contentPVEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentPVJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	
+	#contentDopplerEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentDopplerJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	
+	#contentNewtonDivEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentNewtonDivJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	
+	#contentGeneralWaveEqnEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentGeneralWaveEqnJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	
+	#contentAcousticWaveEqnEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentAcousticWaveEqnJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	
+	#contentSphericalWaveEqnEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentSphericalWaveEqnJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+
+	#contentSphericalHarmonicsEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentSphericalHarmonicsJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	
+	#contentElectroMagEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentElectroMagJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+
+	#contentQMEn {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#contentQMJp {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}		
+
+
+	
+/*	#electroMagId {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#DDSId {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#DFTId {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#DFTPropId {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#slidingDFTId {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#STFTId {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#PVId {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#dopplerId {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}
+	#xfadeId {padding:3px; font-family:verdana; font-size:90%; font-weight:bold; color:#FFFFFF}*/
+	
+	
+	#odmkHeadGFX {padding:10px; background:#000000;}
+	.odmkGFX {z-index:-0; padding:3px 13px 2px 5px; font-family:verdana; font-size:90%; background:#000000;}
+	img.odmk_logo {float:left; z-index:-0; clear:both; display:block}
+	img.odmkGFX_sub {float:left; width:600px; z-index:-0}
+    img.odmkGFX_eqn {z-index:-0}
+		
+	/*.odmkBody #laTex {color:#57FEFF;}*/
+	.laTex {color:#57FEFF;}
+	    
+	.odmkC1 {padding:10px; font-family:verdana; font-size:90%; color:white; background:#000015;}
+	        
+	#foot {clear:both;　padding:10px;　float:left;　font-family:verdana;　font-size:90%;　color:#555555;　background:#000015;}
+	
+	
+	</style>
+	
+	<!--***********************************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/*****CSS end**************************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/************************************************************************************************************************************-->	
+
+
+	
+	<!--***********************************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/*****Main begin***********************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/************************************************************************************************************************************-->	
+	
+</HEAD>
+<BODY onload="odmkInit();">
+ 
+    <div class="odmkBody">
+	
+		<div id="odmkHeadGFX">
+            <img src="gfx/jirobata_header4.jpg">
+        </div>
+      
+		<div>
+			<ul class="lang" id="lang">
+				<li id="lang-en"><a href="javascript:void(0)" onclick="useJapanese(0)">&nbsp English</a></li>
+				<li id="lang-jp"><a href="javascript:void(0)" onclick="useJapanese(1)">日本語</a></li>
 			</ul>
-		</footer>
-	</body>
+			<br>
+		</div>
+		
+		<div id="odmkHeaderEn">
+				Jirobata Programming Industries
+		</div>
+		
+		<div id="odmkHeaderJp">
+				　ヒロバタ　プログラッミング　インダストリー
+		</div>
+	
+		
+		<div id="odmkTitleEn">
+				odmk eqn
+		</div>
+		
+		<div id="odmkTitleJp">
+				odmk eqn
+		</div>
+	
+<!--		<div id="odmkSubTitleEn">
+            current page sub-title
+        </div>
+    
+        <div id="odmkSubTitleJp">
+            このぺーじの副題
+        </div>-->
+	
+		<!--*****************************************************************************************************************************/
+			/*****Content begin**********************************************************************************************************/
+			/****************************************************************************************************************************-->
+	 
+	 
+		<!--*****content abstract********************************************************************************************************-->		
+		<!--<div id="abstractHeaderEn">
+		    <p>
+				Abstract:
+			</p>
+		</div>
+		
+		<div id="abstractHeaderJp">
+			<p>
+				抄録:
+			</p>
+		</div>-->
+		
+		<div id="contentAbstractEn">
+			<p>
+				a collection of Mathematical Equations, Numerical Methods, Signal Processing Techniques
+				<!--The purpose is for ease of replication and to standardize notation for use in research and publication of mathematical content.
+				I have attempted to be as consistent as possible with notation. The equations are grouped according to various subjects
+				that I currently use for the development of eletronic musical instruments, and other engineering work.-->
+				<br><br>
+			</p>
+		</div>
+			
+		<div id="contentAbstractJp">
+			<p>		
+				数学関係方程式, 算式, 信吾処理の技術を集めたもの
+				<!--このページの内容は数学関係方程式を集めたものです。方程式はグラフィカルで表しているもの（.gif)とLaTeXという科学的記数法のコードも書いてある。この目的は
+				研究することや数学関係内容を書き表わすのために簡単にコピーをできることや標準化（画一化）することです。記法に一所懸命首尾一貫してみた。方程式は現在の
+				電気音楽機会を開発するやほかの工学関係仕事をするのにざまざまの話題によると配列されている。-->
+				<br><br>
+			</p>		
+		</div>
+		
+		<div id="selectEn">		
+			<p>	
+				<h3>Jump to Subject</h3>
+				<a href="#xfade">Equal Power Crossfader</a><br>
+				<a href="#Chebyshev">Chebyshev Polynomials</a><br>				
+				<a href="#DDS">Direct Digital Synthesis (DDS)</a><br>
+				<a href="#DFT">Discrete Fourier Transform (DFT)</a><br>
+				<a href="#DFTProp">Discrete Fourier Transform Properties</a><br>				
+				<a href="#slidingDFT">Sliding DFT</a><br>
+				<a href="#STFT">Short Time Fourier Transform (STFT)</a><br>
+				<a href="#PV">Phase Vocoder</a><br>
+				<a href="#Doppler">Doppler Shift</a><br>
+				<a href="#NewtonDiv">Newton-Raphson Division</a><br>
+				<a href="#generalWaveEqn">General Wave Equation</a><br>
+				<a href="#acousticWaveEqn">Acoustic Wave Equation</a><br>
+				<a href="#sphericalWaveEqn">Spherical Wave Equation</a><br>
+				<a href="#sphericalHarmonics">Spherical Harmonics</a><br>
+				<a href="#electroMag">Electromagnetics</a><br>
+				<a href="#quantumMech">Quantum Mechanics</a><br>
+			</p>			
+		</div>	
+			
+
+		<div id="selectJp">				
+			<p>	
+				<h3>各項目にジャンプ</h3>
+				<a href="#xfadej">Equal Power クロスフェード</a><br>
+				<a href="#Chebyshevj">チェビシェフ 多項式</a><br>				
+				<a href="#DDSj">ダイレクト　デジタル　シンセサイザ (DDS)</a><br>
+				<a href="#DFTj">離散フーリエ変換 (DFT)</a><br>
+				<a href="#DFTPropj">離散フーリエ変換 プロパティ</a><br>				
+				<a href="#slidingDFTj">スライディング DFT</a><br>
+				<a href="#STFTj">短時間フーリエ変換 (STFT)</a><br>
+				<a href="#PVj">フェーズボコーダ</a><br>
+				<a href="#Dopplerj">ドプラー シフト</a><br>
+				<a href="#NewtonDivj">ニュートン ラプソン除算</a><br>
+				<a href="#generalWaveEqnj">波動方程式</a><br>
+				<a href="#acousticWaveEqnj">音響の波動方程式</a><br>
+				<a href="#sphericalWaveEqnj">球座標の波動方程式</a><br>
+				<a href="#sphericalHarmonicsj">球面調和関数</a><br>				
+				<a href="#electroMagj">マクスウェル方程式</a><br>
+				<a href="#quantumMechj">量子力学</a><br>				
+		    </p>
+		</div>
+
+	    <!--*****end content abstract*****************************************************************************************************--> 
+
+        <!--*****main content header******************************************************************************************************
+	    <div id="mainHeaderEn">
+            <p>
+				Main:
+	        </p>
+        </div>
+    
+        <div id="mainHeaderJp">
+            <p>
+				メイン:
+	        </p>
+        </div>
+	    <!--*****end main content header***************************************************************************************************-->
+		
+		
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content Xfade*************************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->		
+		<div id="contentXfadeEn">
+			<p>			
+				<a name="xfade"></a> 	
+				<h1>Equal Power Cross-fader</h1>
+			</p>
+											
+			<p>
+				<h3>Equal-Power Cross-Fading of signals between channel A and channel B</h3>
+				<br>
+
+				f of  x:<br>
+				Amplitiude envelope from channel A to channel B<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/xfade_fofx_b.gif">
+				<br>
+				<h5 class="laTex">f(x) = cos\left ( \frac{\Pi}{4}(2x - 1)^{2n-1} +1 \right )</h5>
+				<br><br>
+				
+				f of one minus x:<br>
+				Amplitiude envelope from channel B to channel A<br><br>				
+				<img class="odmkGFX_eqn" src="odmk_eqn/xfade_fof1minusx_b.gif">
+				<br>
+				<h5 class="laTex">f(1-x) = cos\left ( \frac{\Pi}{4}(1-2x)^{2n-1} +1 \right )</h5>
+				<br><br>				
+				
+	
+			</p>			
+	    </div>
+
+		<div id="contentXfadeJp">
+			<p>			
+				<a name="xfadej"></a> 	
+				<h1>Equal Power クロスフェード</h1>
+			</p>
+			
+			<!--<p>
+			<img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+			<br>
+			</p>-->
+			
+			<p>
+				<h3>Equal-Power Cross-Fading of signals between channel A and channel B</h3>
+				<br>
+	
+				f of  x:<br>
+				Amplitiude envelope from channel A to channel B<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/xfade_fofx_b.gif">
+				<br>
+				<h5 class="laTex">f(x) = cos\left ( \frac{\Pi}{4}(2x - 1)^{2n-1} +1 \right )</h5>
+				<br><br>
+				
+				f of one minus x:<br>
+				Amplitiude envelope from channel B to channel A<br><br>				
+				<img class="odmkGFX_eqn" src="odmk_eqn/xfade_fof1minusx_b.gif">
+				<br>
+				<h5 class="laTex">f(1-x) = cos\left ( \frac{\Pi}{4}(1-2x)^{2n-1} +1 \right )</h5>
+				<br><br>						
+			</p>		
+		</div>
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content Xfade*********************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content Chebyshev*********************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->		
+		<div id="contentChebyshevEn">
+			<p>			
+				<a name="Chebyshev"></a> 	
+				<h1>Chebyshev Polynomials</h1>
+			</p>
+									
+<!--			<p>
+				<img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+				<br>
+			</p>-->
+			
+			<p>
+				<h3>Chebyshev Polynomials</h3>
+				<br>
+	
+<!--				Gauss's Law:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_gaussLaw_sci_diff_b.gif">
+				<br>
+				<h5 class="laTex">\nabla \cdot E = \frac{\rho }{\varepsilon _{0}}</h5>
+				<br><br>-->
+			</p>			
+	    </div>
+
+		<div id="contentChebyshevJp">
+			<p>			
+				<a name="Chebyshevj"></a> 	
+				<h1>チェビシェフ 多項式</h1>
+			</p>
+			
+<!--			<p>
+				<img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+				<br>
+			</p>-->
+			
+			<p>
+				<h3>チェビシェフ 多項式</h3>
+				<br>
+	
+<!--				Gauss's Law:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_gaussLaw_sci_diff_b.gif">
+				<br>
+				<h5 class="laTex">\nabla \cdot E = \frac{\rho }{\varepsilon _{0}}</h5>
+				<br><br>-->
+
+			</p>
+	    </div>
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content Chebyshev*****************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content Direct Digital Synthesis******************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->	    
+		<div id="contentDDSEn">
+			<p>
+				<a name="DDS"></a>	
+				<h1>Direct Digital Synthesis (DDS)</h1>
+				<br>
+			</p>		
+		
+			<p>				
+				Direct Digital Synthesis (DDS), or Numerically controlled Oscillators (NCO), is a method of generating discrete real or complex
+				sinusoid waveforms. The basic method is to use a digital integrator (accumulator) that generates a phase increment (or skipping
+				value) used to address a look-up table. A single cycle of a sinusoid is stored in the look-up table so that the phase increment
+				skips through samples of the sinusoid at a certain period thereby generating an output sinusoid waveform at a desired frequency.
+				Typical implementations of DDS allow for the user to set the desired output frequency, adjust the sinusoid phase, and include
+				various techniques to reduce noise and thereby increase the spurious free dynamic range (SFDR). The internal parameters of the
+				DDS design, such as the accumulator bit-depth, table depth, and interpolation can also be adjusted to control the frequency
+				resolution and dynamic range of the output waveform. The following diagrams and equations define the basic structure and operations
+				of Direct Digital Synthesis.
+				<br><br>
+				
+				The DDS output frequency:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DDS_Fout1_b.gif">
+				<br>
+				<h5 class="laTex">F_{out} = \frac{\left ( \Delta \theta *F_{clk} \right )}{2^{n_{acc}}}Hz</h5>
+				<br><br>
+			
+				The DDS phase increment value:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DDS_phaseInc1_b.gif">
+				<br>
+				<h5 class="laTex">\Delta \theta = \frac{\left ( F_{out} *2^{n_{acc}} \right )}{F_{clk}}</h5>
+				<br><br>
+			
+				The DDS frequency resolution:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DDS_Fres1_b.gif">
+				<br>
+				<h5 class="laTex">\Delta f = \frac{F_{clk}}{2^{n_{acc}}}Hz</h5>
+				<br><br>
+			
+				The number of bits of Phase Accumulator for the required frequency resolution:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DDS_nacc1_b.gif">
+				<br>
+				<h5 class="laTex">n_{acc} = \left \lceil log_{2}\left (\frac{F_{clk}}{\Delta f}  \right ) \right \rceil</h5>
+			
+				<br><br><br>
+			</p>
+		</div>
+		
+		<div id="contentDDSJp">
+			<p>
+				<a name="DDSj"></a>	
+				<h1>ダイレクト　デジタル　シンセサイザ (DDS)</h1>
+				<br>
+			</p>		
+		
+			<p>
+				Direct Digital Synthesis (DDS), or Numerically controlled Oscillators (NCO), is a method of generating discrete real or complex
+				sinusoid waveforms. The basic method is to use a digital integrator (accumulator) that generates a phase increment used to
+				address a look-up table. A single cycle of a sinusoid is stored in the look-up table so that the phase increment
+				skips through samples of the sinusoid at a certain period thereby generating an output sinusoid waveform at a desired frequency.
+				Typical implementations of DDS allow for the user to set the desired output frequency, adjust the sinusoid phase, and include
+				various techniques to reduce noise and thereby increase the spurious free dynamic range (SFDR). The internal parameters of the
+				DDS design, such as the accumulator bit-depth, table depth, and interpolation can also be adjusted to control the frequency
+				resolution and dynamic range of the output waveform. The following diagrams and equations define the basic structure and operations
+				of Direct Digital Synthesis.
+				<br><br>				
+				
+				DDSの出力周波数:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DDS_Fout1_b.gif">
+				<br>
+				<h5 class="laTex">F_{out} = \frac{\left ( \Delta \theta *F_{clk} \right )}{2^{n_{acc}}}Hz</h5>
+				<br><br>
+			
+				DDSの位相インクリメント値:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DDS_phaseInc1_b.gif">
+				<br>
+				<h5 class="laTex">\Delta \theta = \frac{\left ( F_{out} *2^{n_{acc}} \right )}{F_{clk}}</h5>
+				<br><br>
+			
+				DDS frequency resolution:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DDS_Fres1_b.gif">
+				<br>
+				<h5 class="laTex">\Delta f = \frac{F_{clk}}{2^{n_{acc}}}Hz</h5>
+				<br><br>
+			
+				The number of bits of Phase Accumulator for the required frequency resolution:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DDS_nacc1_b.gif">
+				<br>
+				<h5 class="laTex">n_{acc} = \left \lceil log_{2}\left (\frac{F_{clk}}{\Delta f}  \right ) \right \rceil</h5>
+			
+				<br><br><br>
+			</p>
+		</div>
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content Direct Digital Synthesis**************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->		
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content Discrete Fourier Transform****************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->		
+
+		<div id="contentDFTEn">
+			<p>
+				<a name="DFT"></a>	
+				<h1>Discrete Fourier Transform (DFT)</h1>
+				<br>
+			</p>			
+		
+			<p>
+				<h2>precursor - continuous Fourier Transform / DTFT</h2>
+				<br><br>
+	
+				The continuous time Fourier Transform (FT) of an infinite length sequence x(t):<br>
+				for a continuous-time function, x(t):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/FT_b.gif">
+				<br>
+				<h5 class="laTex">X(f) = \int_{-\infty }^{\infty }x(t)e^{-j2\pi ft}dt</h5>
+				<br><br>
+					
+				The continuous time insverse Fourier Transform (iFT) of an infinite length sequence x(t):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/iFT_b.gif">
+				<br>
+				<h5 class="laTex">x(t) = \int_{-\infty }^{\infty }X(f)e^{j2\pi ft}df</h5>
+				<br><br>
+			
+				FT <=> iFT for an infinite length sequence x(t):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/FT_symmetrical_b.gif">
+				<br>
+				<h5 class="laTex">X(f) = \int_{-\infty }^{\infty }x(t)e^{-j2\pi ft}dt \Leftrightarrow x(t) = \int_{-\infty }^{\infty }X(f)e^{j2\pi ft}df</h5>
+				<br><br>
+			
+				The Discrete Time Fourier Transform (DTFT)<br>
+				for discrete moments in time: t = nT, where T is the sampling period (in seconds), and fs = 1/T is the sampling rate (samples per second):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DTFT_b.gif">
+				<br>
+				<h5 class="laTex">X(\omega ) = \sum_{-\infty }^{\infty }x(n)e^{-j\omega n}, \omega  = 2\pi \frac{f}{f_{s}}</h5>
+				<br><br>
+			</p>
+			
+			<p>		
+				<h2>DFT & inverse DFT (iDFT) equations:</h2>
+				<br>
+				
+				The DFT for a finite length sequence x(n), of length N:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_b.gif">
+				<br>
+				<h5 class="laTex">X(k) = \sum_{n=0}^{N-1}x(n)e^{-j2\pi nk/N}</h5>
+				<br><br>
+				
+				The inverse DFT for a finite length sequence x(k), of length N:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/iDFT_b.gif">
+				<br>
+				<h5 class="laTex">x(n) = 1/N\sum_{k=0}^{N-1}x(k)e^{j2\pi nk/N}</h5>
+				<br><br>
+			
+				DFT <=> iDFT for a finite length sequence x(k), of length N:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_symmetrical_b.gif">
+				<br>
+				<h5 class="laTex">X(f) = \int_{-\infty }^{\infty }x(t)e^{-j2\pi ft}dt \Leftrightarrow x(t) = \int_{-\infty }^{\infty }X(f)e^{j2\pi ft}df</h5>
+				<br><br>		
+			
+				The DFT Magnitude:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_mag_b.gif">
+				<br>
+				<h5 class="laTex">X_{mag}(k) = \left | X(k) \right | = \sqrt{X_{real}(k)^{2} + X_{imag}(k)^{2}}</h5>
+				<br><br>
+			
+				The DFT Phase:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_phase_b.gif">
+				<br>
+				<h5 class="laTex">X_{phase}(k) = X_{\theta }(k) = arctan\left (\frac{X_{imag}(k)}{X_{real}(k)}  \right )</h5>
+				<br><br>
+			
+				Root of Unity:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/rootOfUnity_b.gif">
+				<br><br><br>
+				DFT expression using Roots Of Unity:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_rootOfUnity1_b.gif">
+				<br>
+				<h5 class="laTex">X(k) = \sum_{n=0}^{N-1}x(n)\omega ^{-kn}</h5>
+				<br><br>
+			
+				Euler's Relationship:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/euler_relation_b.gif">
+				<br>
+				<h5 class="laTex">e ^{-j\theta } = cos(\theta ) - jsin(\theta )</h5>
+				<br><br>
+			
+				The DFT equation in rectangular form:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_rectangular1_b.gif">
+				<br>
+				<h5 class="laTex">X(k) = \sum_{n=0}^{N-1}x(n)[cos(2\pi nk/N) - jsin(2\pi nk/N)]</h5>
+				<br><br>
+			
+			
+				The DFT expressed in matrix notation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_mtx_b.gif">
+				<br><br>
+			
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_matrix_b.gif">
+				<br>				
+				<h5 class="laTex">\begin{bmatrix}<br>
+				X(0)\\<br>
+				X(1)\\<br>
+				X(2)\\<br>
+				\vdots \\<br> 
+				X(N-1)<br>
+				\end{bmatrix} = \begin{bmatrix}<br>
+				1 & 1 & 1 & \cdots  & 1\\<br> 
+				1 & e^{-j2\pi /N} & e^{-j4\pi /N} & \cdots & e^{\frac{-j2(N-1)\pi}{N}}\\<br> 
+				1 & e^{-j4\pi /N} & e^{-j8\pi /N} & \cdots & e^{\frac{-j4(N-1)\pi}{N}}\\<br> 
+				\vdots  & \vdots & \vdots & \ddots  & \vdots\\<br> 
+				1 & e^{\frac{-j2(N-1)\pi}{N}} & e^{\frac{-j4(N-1)\pi}{N}} & \cdots & e^{\frac{-j(N-1)^{2}\pi}{N}}<br>
+				\end{bmatrix}\begin{bmatrix}<br>
+				x(0)\\<br> 
+				x(1)\\<br> 
+				x(2)\\<br> 
+				\vdots \\<br> 
+				x(N-1)<br>
+				\end{bmatrix}</h5>
+				<br><br>
+	
+				The iDFT expressed in matrix notation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/iDFT_mtx_b.gif">
+				<br>
+				<h5 class="laTex">x = \frac{1}{N}W^{\dagger }X</h5>
+				<br><br>
+			
+				<img class="odmkGFX_eqn" src="odmk_eqn/iDFT_matrix_b.gif">
+				<br>
+				<h5 class="laTex">\begin{bmatrix}<br>
+				x(0)\\<br>
+				x(1)\\<br> 
+				x(2)\\<br> 
+				\vdots \\<br> 
+				x(N-1)<br>
+				\end{bmatrix} = \frac{1}{N}\begin{bmatrix}<br>
+				1 & 1 & 1 & \cdots  & 1\\<br> 
+				1 & e^{j2\pi /N} & e^{j4\pi /N} & \cdots & e^{\frac{j2(N-1)\pi}{N}}\\<br> 
+				1 & e^{j4\pi /N} & e^{j8\pi /N} & \cdots & e^{\frac{j4(N-1)\pi}{N}}\\<br> 
+				\vdots  & \vdots & \vdots & \ddots  & \vdots\\<br> 
+				1 & e^{\frac{j2(N-1)\pi}{N}} & e^{\frac{j4(N-1)\pi}{N}} & \cdots & e^{\frac{j(N-1)^{2}\pi}{N}}<br>
+				\end{bmatrix}\begin{bmatrix}<br>
+				X(0)\\<br> 
+				X(1)\\<br> 
+				X(2)\\<br> 
+				\vdots \\<br> 
+				X(N-1)<br>
+				\end{bmatrix}</h5>
+				<br><br>
+			</p>
+		</div>		
+
+		<div id="contentDFTJp">
+			<p>
+				<a name="DFTj"></a>	
+				<h1>離散フーリエ変換 (DFT)</h1>
+				<br>
+			</p>
+			
+			<p>
+				<h2>precursor - continuous フーリエ変換 / DTFT</h2>
+				<br><br>
+	
+				The continuous time フーリエ変換 (FT) of an infinite length sequence x(t):<br>
+				for a continuous-time function, x(t):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/FT_b.gif">
+				<br>
+				<h5 class="laTex">X(f) = \int_{-\infty }^{\infty }x(t)e^{-j2\pi ft}dt</h5>
+				<br><br>
+					
+				The continuous time insverse フーリエ変換 (iFT) of an infinite length sequence x(t):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/iFT_b.gif">
+				<br>
+				<h5 class="laTex">x(t) = \int_{-\infty }^{\infty }X(f)e^{j2\pi ft}df</h5>
+				<br><br>
+			
+				FT <=> iFT for an infinite length sequence x(t):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/FT_symmetrical_b.gif">
+				<br>
+				<h5 class="laTex">X(f) = \int_{-\infty }^{\infty }x(t)e^{-j2\pi ft}dt \Leftrightarrow x(t) = \int_{-\infty }^{\infty }X(f)e^{j2\pi ft}df</h5>
+				<br><br>
+			
+				The Discrete Time フーリエ変換 (DTFT)<br>
+				for discrete moments in time: t = nT, where T is the sampling period (in seconds), and fs = 1/T is the sampling rate (samples per second):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DTFT_b.gif">
+				<br>
+				<h5 class="laTex">X(\omega ) = \sum_{-\infty }^{\infty }x(n)e^{-j\omega n}, \omega  = 2\pi \frac{f}{f_{s}}</h5>
+				<br><br>
+			</p>
+			
+			<p>		
+				<h2>DFT & inverse DFT (iDFT) equations:</h2>
+				<br>
+				
+				The DFT for a finite length sequence x(n), of length N:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_b.gif">
+				<br>
+				<h5 class="laTex">X(k) = \sum_{n=0}^{N-1}x(n)e^{-j2\pi nk/N}</h5>
+				<br><br>
+				
+				The inverse DFT for a finite length sequence x(k), of length N:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/iDFT_b.gif">
+				<br>
+				<h5 class="laTex">x(n) = 1/N\sum_{k=0}^{N-1}x(k)e^{j2\pi nk/N}</h5>
+				<br><br>
+			
+				DFT <=> iDFT for a finite length sequence x(k), of length N:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_symmetrical_b.gif">
+				<br>
+				<h5 class="laTex">X(f) = \int_{-\infty }^{\infty }x(t)e^{-j2\pi ft}dt \Leftrightarrow x(t) = \int_{-\infty }^{\infty }X(f)e^{j2\pi ft}df</h5>
+				<br><br>		
+			
+				The DFT Magnitude:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_mag_b.gif">
+				<br>
+				<h5 class="laTex">X_{mag}(k) = \left | X(k) \right | = \sqrt{X_{real}(k)^{2} + X_{imag}(k)^{2}}</h5>
+				<br><br>
+			
+				The DFT Phase:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_phase_b.gif">
+				<br>
+				<h5 class="laTex">X_{phase}(k) = X_{\theta }(k) = arctan\left (\frac{X_{imag}(k)}{X_{real}(k)}  \right )</h5>
+				<br><br>
+			
+				Root of Unity:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/rootOfUnity_b.gif">
+				<br><br><br>
+				DFT expression using Roots Of Unity:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_rootOfUnity1_b.gif">
+				<br>
+				<h5 class="laTex">X(k) = \sum_{n=0}^{N-1}x(n)\omega ^{-kn}</h5>
+				<br><br>
+			
+				Euler's Relationship:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/euler_relation_b.gif">
+				<br>
+				<h5 class="laTex">e ^{-j\theta } = cos(\theta ) - jsin(\theta )</h5>
+				<br><br>
+			
+				The DFT equation in rectangular form:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_rectangular1_b.gif">
+				<br>
+				<h5 class="laTex">X(k) = \sum_{n=0}^{N-1}x(n)[cos(2\pi nk/N) - jsin(2\pi nk/N)]</h5>
+				<br><br>
+			
+			
+				The DFT expressed in matrix notation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_mtx_b.gif">
+				<br><br>
+			
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_matrix_b.gif">
+				<br>				
+				<h5 class="laTex">\begin{bmatrix}<br>
+				X(0)\\<br>
+				X(1)\\<br>
+				X(2)\\<br>
+				\vdots \\<br> 
+				X(N-1)<br>
+				\end{bmatrix} = \begin{bmatrix}<br>
+				1 & 1 & 1 & \cdots  & 1\\<br> 
+				1 & e^{-j2\pi /N} & e^{-j4\pi /N} & \cdots & e^{\frac{-j2(N-1)\pi}{N}}\\<br> 
+				1 & e^{-j4\pi /N} & e^{-j8\pi /N} & \cdots & e^{\frac{-j4(N-1)\pi}{N}}\\<br> 
+				\vdots  & \vdots & \vdots & \ddots  & \vdots\\<br> 
+				1 & e^{\frac{-j2(N-1)\pi}{N}} & e^{\frac{-j4(N-1)\pi}{N}} & \cdots & e^{\frac{-j(N-1)^{2}\pi}{N}}<br>
+				\end{bmatrix}\begin{bmatrix}<br>
+				x(0)\\<br> 
+				x(1)\\<br> 
+				x(2)\\<br> 
+				\vdots \\<br> 
+				x(N-1)<br>
+				\end{bmatrix}</h5>
+				<br><br>
+	
+				The iDFT expressed in matrix notation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/iDFT_mtx_b.gif">
+				<br>
+				<h5 class="laTex">x = \frac{1}{N}W^{\dagger }X</h5>
+				<br><br>
+			
+				<img class="odmkGFX_eqn" src="odmk_eqn/iDFT_matrix_b.gif">
+				<br>
+				<h5 class="laTex">\begin{bmatrix}<br>
+				x(0)\\<br>
+				x(1)\\<br> 
+				x(2)\\<br> 
+				\vdots \\<br> 
+				x(N-1)<br>
+				\end{bmatrix} = \frac{1}{N}\begin{bmatrix}<br>
+				1 & 1 & 1 & \cdots  & 1\\<br> 
+				1 & e^{j2\pi /N} & e^{j4\pi /N} & \cdots & e^{\frac{j2(N-1)\pi}{N}}\\<br> 
+				1 & e^{j4\pi /N} & e^{j8\pi /N} & \cdots & e^{\frac{j4(N-1)\pi}{N}}\\<br> 
+				\vdots  & \vdots & \vdots & \ddots  & \vdots\\<br> 
+				1 & e^{\frac{j2(N-1)\pi}{N}} & e^{\frac{j4(N-1)\pi}{N}} & \cdots & e^{\frac{j(N-1)^{2}\pi}{N}}<br>
+				\end{bmatrix}\begin{bmatrix}<br>
+				X(0)\\<br> 
+				X(1)\\<br> 
+				X(2)\\<br> 
+				\vdots \\<br> 
+				X(N-1)<br>
+				\end{bmatrix}</h5>
+				<br><br>
+			</p>
+		</div>
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content Discrete Fourier Transform************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content Discrete Fourier Transform Properties*****************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+		<div id="contentDFTPropEn">
+			<p>
+				<a name="DFTProp"></a>	
+				<h1>Discrete Fourier Transform Properties</h1>
+				<br>
+			</p>
+
+				
+			<p>
+				<h2>DTFT / DFT Properties</h2>
+				<br><br>
+
+				<h3>DTFT Linearity:</h3><br><br>
+				The linearity of the DTFT<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DTFT_linearity1_b.gif">
+				<br>
+				<h5 class="laTex">\alpha x_{1} + \beta x_{2} \Leftrightarrow  \alpha X_{1} + \beta X_{2}</h5>
+				<br>
+				<h3>or:</h3><br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DTFT_linearity2_b.gif">
+				<br>
+				<h5 class="laTex">DTFT(\alpha x_{1} + \beta x_{2}) = \alpha\cdot DTFT(x_{1}) + \beta \cdot DTFT(x_{2})</h5>
+				<br><br>
+				
+				<h3>DFT Completeness:</h3><br><br>
+				The discrete Fourier transform is an invertible, linear transformation<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_completeness_b.gif">
+				<br>
+				<h5 class="laTex">\boldsymbol{F} : \mathbb{C}^{N} \rightarrow \mathbb{C}^{N}</h5>
+				<br><br>
+				
+				<h3>DFT Orthogonality Relationship:</h3><br><br>
+				The vectors u(k) form an orthogonal basis over a set of N-Dimensional complex vectors.<br>
+				orthogonal basis:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_orthogonalBasisVect_b.gif">
+				<br>
+				<h5 class="laTex">u_{k} = \left [ e^{j2\pi nk/N} \mid _{n=0,1,2,...N-1} \right ]^{T}</h5>
+				<br><br>
+				
+				A set of N-Dimensional Complex Vectors demonstrating orthogonality<br>
+				From e^(j*0)=1, the summation = N (1+1+...+=N) when k = k', zero otherwise:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_complexVectSet_b.gif">
+				<br>
+				<h5 class="laTex">u_{k}^{T}u_{k'}^{*} = \sum_{n=0}^{N-1}\left ( e^{j2\pi n(k)/N} \right )\left ( e^{j2\pi n(-k')/N} \right ) = \sum_{n=0}^{N-1}e^{j2\pi n(k-k')/N} = N_{\delta kk'}</h5>
+				<br><br>
+				
+				Kronecker Delta:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_kroneckerDelta_b.gif">
+				<br>
+				<h5 class="laTex">_{\delta kk'}</h5>
+				<br><br>
+				
+				Where N(dkk') is the Kronecker Delta, with the following definition<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_NkroneckerDeltaDef_b.gif">
+				<br>
+				<h5 class="laTex">N_{\delta kk'} \rightarrow def: \begin{bmatrix}
+				1+1+...+=N, for (k = k')\\ 
+				o, otherwise
+				\end{bmatrix}</h5>
+				<br><br>
+			</p>
+			
+			<p>
+				<h3>DFT Symmetry</h3><br><br>
+				For real-input DFT (or FFT), with imaginary components = 0, the DFT obeys symmetry:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_realSymm1_b.gif">
+				<br>
+				<h5 class="laTex">X(k) = X^{*}(N-k) \Leftrightarrow X(N-k) = X^{*}(k)</h5>
+				<br><br>
+				The real-input symmetrical DFT equation can then be written as:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_realSymm2_b.gif">
+				<br>
+				<h5 class="laTex">X(k) = X^{*}(N-k) \Leftrightarrow X(N-k) = X^{*}(k)</h5>
+				<br><br>
+			</p>
+			
+			<p>
+				<h3>Parseval's Theory</h3><br>
+				Parseval's theorem states that the sum (or integral) of the square of a function is equal to the sum (or integral) of <br>
+				the square of its transform. Parseval's theorem is based on the unitary property of the Fourier transform<br><br>
+				Parseval's Theory for continuous Fourier signals:<br>
+				The interpretation of this form of the theorem is that the total energy contained in a waveform x(t) summed across all of time t
+				is equal to the total energy of the waveform's Fourier Transform X(f) summed across all of its frequency components f<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/parsevalsTheory_fourier_b.gif">
+				<br>
+				<h5 class="laTex">\int_{-\infty   }^{\infty }\left | x(t) \right |^{2}dt = \int_{-\infty   }^{\infty }\left | X(f) \right |^{2}df</h5>
+				<br><br>
+				Parseval's Theory for Discrete time transform signals<br>
+				phi represents the angular frequency (in radians per sample) of x<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DTFT_parsevalsTheory_b.gif">
+				<br>
+				<h5 class="laTex">\sum_{n=-\infty }^{\infty }\left | x(n) \right |^{2} = \frac{1}{2\pi }\int_{-\pi  }^{\pi }\left | X(e^{i\phi }) \right |^{2}d\phi</h5>
+				<br><br>
+				Parseval's Theory for squared Discrete Fourier Transform<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_parsevalsTheory1_b.gif">
+				<br>
+				<h5 class="laTex">\sum_{n=0}^{N-1}\left | x(n) \right |^{2} = \frac{1}{N}\sum_{n=0}^{N-1}\left | X(k) \right |^{2}</h5>
+				<br><br>
+				
+				Parseval's Theory for conjugate Discrete Fourier Transforms<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_parsevalsTheory2_b.gif">
+				<br>
+				<h5 class="laTex">\sum_{n=0}^{N-1}x(n)y^{*}(n) = \frac{1}{N}\sum_{k=0}^{N-1}X(k)Y^{*}(k)</h5>
+				<br><br>						
+				
+				<br><br><br>
+			</p>		
+	    </div>
+		
+		<div id="contentDFTPropJp">
+			<p>
+				<a name="DFTPropj"></a>	
+				<h1>離散フーリエ変換 プロパティ</h1>
+				<br>
+			</p>		
+
+			<p>
+				<h2>DTFT / DFT Properties</h2>
+				<br><br>
+
+				<h3>DTFT Linearity:</h3><br><br>
+				The linearity of the DTFT<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DTFT_linearity1_b.gif">
+				<br>
+				<h5 class="laTex">\alpha x_{1} + \beta x_{2} \Leftrightarrow  \alpha X_{1} + \beta X_{2}</h5>
+				<br>
+				<h3>or:</h3><br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DTFT_linearity2_b.gif">
+				<br>
+				<h5 class="laTex">DTFT(\alpha x_{1} + \beta x_{2}) = \alpha\cdot DTFT(x_{1}) + \beta \cdot DTFT(x_{2})</h5>
+				<br><br>
+				
+				<h3>DFT Completeness:</h3><br><br>
+				The discrete Fourier transform is an invertible, linear transformation<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_completeness_b.gif">
+				<br>
+				<h5 class="laTex">\boldsymbol{F} : \mathbb{C}^{N} \rightarrow \mathbb{C}^{N}</h5>
+				<br><br>
+				
+				<h3>DFT Orthogonality Relationship:</h3><br><br>
+				The vectors u(k) form an orthogonal basis over a set of N-Dimensional complex vectors.<br>
+				orthogonal basis:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_orthogonalBasisVect_b.gif">
+				<br>
+				<h5 class="laTex">u_{k} = \left [ e^{j2\pi nk/N} \mid _{n=0,1,2,...N-1} \right ]^{T}</h5>
+				<br><br>
+				
+				A set of N-Dimensional Complex Vectors demonstrating orthogonality<br>
+				From e^(j*0)=1, the summation = N (1+1+...+=N) when k = k', zero otherwise:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_complexVectSet_b.gif">
+				<br>
+				<h5 class="laTex">u_{k}^{T}u_{k'}^{*} = \sum_{n=0}^{N-1}\left ( e^{j2\pi n(k)/N} \right )\left ( e^{j2\pi n(-k')/N} \right ) = \sum_{n=0}^{N-1}e^{j2\pi n(k-k')/N} = N_{\delta kk'}</h5>
+				<br><br>
+				
+				Kronecker Delta:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_kroneckerDelta_b.gif">
+				<br>
+				<h5 class="laTex">_{\delta kk'}</h5>
+				<br><br>
+				
+				Where N(dkk') is the Kronecker Delta, with the following definition<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_NkroneckerDeltaDef_b.gif">
+				<br>
+				<h5 class="laTex">N_{\delta kk'} \rightarrow def: \begin{bmatrix}
+				1+1+...+=N, for (k = k')\\ 
+				o, otherwise
+				\end{bmatrix}</h5>
+				<br><br>
+			</p>
+			
+			<p>
+				<h3>DFT Symmetry</h3><br><br>
+				For real-input DFT (or FFT), with imaginary components = 0, the DFT obeys symmetry:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_realSymm1_b.gif">
+				<br>
+				<h5 class="laTex">X(k) = X^{*}(N-k) \Leftrightarrow X(N-k) = X^{*}(k)</h5>
+				<br><br>
+				The real-input symmetrical DFT equation can then be written as:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_realSymm2_b.gif">
+				<br>
+				<h5 class="laTex">X(k) = X^{*}(N-k) \Leftrightarrow X(N-k) = X^{*}(k)</h5>
+				<br><br>
+			</p>
+			
+			<p>
+				<h3>Parseval's Theory</h3><br>
+				Parseval's theorem usually refers to the result that the Fourier transform is unitary<br>
+				the sum (or integral) of the square of a function is equal to the sum (or integral) of the square of its transform.<br><br>	
+				Parseval's Theory for continuous Fourier signals<br>
+				The interpretation of this form of the theorem is that the total energy contained in a waveform x(t) summed across all of time t
+				is equal to the total energy of the waveform's Fourier Transform X(f) summed across all of its frequency components f<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/parsevalsTheory_fourier_b.gif">
+				<br>
+				<h5 class="laTex">\int_{-\infty   }^{\infty }\left | x(t) \right |^{2}dt = \int_{-\infty   }^{\infty }\left | X(f) \right |^{2}df</h5>
+				<br><br>
+				Parseval's Theory for Discrete time transform signals<br>
+				phi represents the angular frequency (in radians per sample) of x<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DTFT_parsevalsTheory_b.gif">
+				<br>
+				<h5 class="laTex">\sum_{n=-\infty }^{\infty }\left | x(n) \right |^{2} = \frac{1}{2\pi }\int_{-\pi  }^{\pi }\left | X(e^{i\phi }) \right |^{2}d\phi</h5>
+				<br><br>
+				Parseval's Theory for squared Discrete Fourier Transform<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_parsevalsTheory1_b.gif">
+				<br>
+				<h5 class="laTex">\sum_{n=0}^{N-1}\left | x(n) \right |^{2} = \frac{1}{N}\sum_{n=0}^{N-1}\left | X(k) \right |^{2}</h5>
+				<br><br>
+				
+				Parseval's Theory for conjugate Discrete Fourier Transforms<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/DFT_parsevalsTheory2_b.gif">
+				<br>
+				<h5 class="laTex">\sum_{n=0}^{N-1}x(n)y^{*}(n) = \frac{1}{N}\sum_{k=0}^{N-1}X(k)Y^{*}(k)</h5>
+				<br><br>						
+				
+				<br><br><br>
+			</p>
+		</div>	
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content Discrete Fourier Transform Properties*************************************************************************-->
+	    <!--*******************************************************************************************************************************-->	
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content Sliding DFT*******************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+						
+		<div id="contentSlidingDFTEn">				
+			<p>
+				<a name="slidingDFT"></a>
+				<h1>Sliding DFT (SDFT)</h1>
+				<br>
+			</p>
+	
+			<p>
+				<h2>The Sliding DFT algorithm:</h2>
+				<br>
+					
+				The SDFT algorithm computes a new DFT frame each sample, 'sliding' along the input signal one sample at a time. A single DFT (FFT) is computed
+				at the start of the sequence. Then, for each new sample a new DFT frame is computed by performing the following steps: for each frequency bin,
+				add the new sample, subtract the sample that has fallen off the analysis window, and multiply by a complex value (rotation)<br><br>	
+					
+				DFT starting at time t:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/SDFT_dft_time_t_b.gif">
+				<br>
+				<h5 class="laTex">X_{t}(k) = \sum_{n=0}^{N-1}x(n+t)e^{-j2\pi nk/N}</h5>
+				<br><br>
+				DFT at time t+1, eq1:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/SDFT_dft_time_tplus1_b.gif">
+				<br>
+				<h5 class="laTex">X_{t+1}(k) = \sum_{n=0}^{N-1}x(n+t+1)e^{-j2\pi nk/N} = \sum_{n=1}^{N}x(n+t)e^{-j2\pi (n-1)k/N}</h5>
+				<br><br>
+				SDFT:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/SDFT_b.gif">
+				<br>
+				<h5 class="laTex">X_{t+1}(k) = \left ( \sum_{n=0}^{N-1}x(n+t)e^{-j2\pi nk/N} - x_{t} + x_{t+N} \right )e^{j2\pi k/N}</h5>
+				<br><br>
+				SDFT (compact notation):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/SDFTx_b.gif">
+				<br>
+				<h5 class="laTex">X_{t+1}(k) = \left ( X_{t}(k) - x_{t} + x_{t+N} \right )e^{j2\pi k/N}</h5>
+				<br><br>
+			</p>		
+		</div>
+			
+		<div id="contentSlidingDFTJp">				
+			<p>
+				<a name="slidingDFTj"></a>
+				<h1>スライディング DFT (SDFT)</h1>
+				<br>
+			</p>
+	
+			<p>
+				<h2>The Sliding DFT algorithm:</h2>
+				<br>
+					
+				The SDFT algorithm computes a new DFT frame each sample, 'sliding' along the input signal one sample at a time. A single DFT (FFT) is computed
+				at the start of the sequence. Then, for each new sample a new DFT frame is computed by performing the following steps: for each frequency bin,
+				add the new sample, subtract the sample that has fallen off the analysis window, and multiply by a complex value (rotation)<br><br>	
+					
+				DFT starting at time t:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/SDFT_dft_time_t_b.gif">
+				<br>
+				<h5 class="laTex">X_{t}(k) = \sum_{n=0}^{N-1}x(n+t)e^{-j2\pi nk/N}</h5>
+				<br><br>
+				DFT at time t+1, eq1:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/SDFT_dft_time_tplus1_b.gif">
+				<br>
+				<h5 class="laTex">X_{t+1}(k) = \sum_{n=0}^{N-1}x(n+t+1)e^{-j2\pi nk/N} = \sum_{n=1}^{N}x(n+t)e^{-j2\pi (n-1)k/N}</h5>
+				<br><br>
+				SDFT:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/SDFT_b.gif">
+				<br>
+				<h5 class="laTex">X_{t+1}(k) = \left ( \sum_{n=0}^{N-1}x(n+t)e^{-j2\pi nk/N} - x_{t} + x_{t+N} \right )e^{j2\pi k/N}</h5>
+				<br><br>
+				SDFT (compact notation):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/SDFTx_b.gif">
+				<br>
+				<h5 class="laTex">X_{t+1}(k) = \left ( X_{t}(k) - x_{t} + x_{t+N} \right )e^{j2\pi k/N}</h5>
+				<br><br>
+			</p>		
+		</div>			
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content Sliding DFT***************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content Short Time Fourier Transform**************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+		<div id="contentSTFTEn">				
+			<p>
+				<a name="STFT"></a>
+				<h1>Short Time Fourier Transform (STFT)</h1>
+				<br>
+			</p>
+	
+			<p>
+				<h2>Analysis Stage:</h2>
+				<br>
+					
+				Analysis STFT:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_anaSTFT_omegaK_b.gif">
+				<br>
+				<h5 class="laTex">X(t_{a}^{u},\Omega _{k})</h5>
+				<br><br>
+				
+				non-heterodyned STFT representation of the signal:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_analysis_omegaK_b.gif">
+				<br>		
+				<h5 class="laTex">X(t_{a}^{u},\Omega _{k}) = \sum_{n=-\infty }^{\infty }h(n)x(t_{a}^{u}+n)e^{-j\Omega _{k}n} , \Omega _{k} = 2\pi k/N</h5>
+				<br><br>
+			</p>
+			
+			<p>
+				<h2>Synthesis Stage:</h2>
+				<br>
+				
+				Synthesis STFT:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_synSTFT_omegaK_b.gif">
+				<br>
+				<h5 class="laTex">Y(t_{s}^{u},\Omega _{k})</h5>
+				<br><br>
+				
+				phase vocoder output signal signal:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_synthesis1_omegaK_b.gif">
+				<br>	
+				<h5 class="laTex">y(n) = \sum_{u=-\infty }^{\infty }w(n-t_{s}^{u})y_{u}(n-t_{s}^{u})</h5>
+				<br>
+				with<br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_synthesis2_omegaK_b.gif">
+				<br>
+				<h5 class="laTex">y_{u}(n) = 1/N\sum_{k=0}^{N-1}Y(t_{s}^{u},\Omega _{k})e^{j\Omega _{k}n}</h5>
+				<br><br>
+				
+				combined phase vocoder output signal signal:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_synthesis3_omegaK_b.gif">
+				<br>
+				<h5 class="laTex">y(n) = \sum_{u=-\infty }^{\infty }w(n-t_{s}^{u})\left [ \frac{1}{N}\sum_{k=0}^{N-1}Y(t_{s}^{u},\Omega _{k})e^{j\Omega _{k}(n-t_{s}^{u})} \right ]</h5>
+				<br><br>
+			</p>
+		</div>
+		
+		<div id="contentSTFTJp">				
+			<p>
+				<a name="STFTj"></a>
+				<h1>短時間フーリエ変換 (STFT)</h1>
+				<br>
+			</p>
+	
+			<p>
+				<h2">分析 ステージ:</h2>
+				<br>
+					
+				Analysis STFT:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_anaSTFT_omegaK_b.gif">
+				<br>
+				<h5 class="laTex">X(t_{a}^{u},\Omega _{k})</h5>
+				<br><br>
+				
+				non-heterodyned STFT representation of the signal:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_analysis_omegaK_b.gif">
+				<br>		
+				<h5 class="laTex">X(t_{a}^{u},\Omega _{k}) = \sum_{n=-\infty }^{\infty }h(n)x(t_{a}^{u}+n)e^{-j\Omega _{k}n} , \Omega _{k} = 2\pi k/N</h5>
+				<br><br>
+			</p>
+			
+			<p>
+				<h2>再合成 ステージ:</h2>
+				<br>
+				
+				Synthesis STFT:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_synSTFT_omegaK_b.gif">
+				<br>
+				<h5 class="laTex">Y(t_{s}^{u},\Omega _{k})</h5>
+				<br><br>
+				
+				phase vocoder output signal signal:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_synthesis1_omegaK_b.gif">
+				<br>	
+				<h5 class="laTex">y(n) = \sum_{u=-\infty }^{\infty }w(n-t_{s}^{u})y_{u}(n-t_{s}^{u})</h5>
+				<br>
+				with<br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_synthesis2_omegaK_b.gif">
+				<br>
+				<h5 class="laTex">y_{u}(n) = 1/N\sum_{k=0}^{N-1}Y(t_{s}^{u},\Omega _{k})e^{j\Omega _{k}n}</h5>
+				<br><br>
+				
+				combined phase vocoder output signal signal:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_synthesis3_omegaK_b.gif">
+				<br>
+				<h5 class="laTex">y(n) = \sum_{u=-\infty }^{\infty }w(n-t_{s}^{u})\left [ \frac{1}{N}\sum_{k=0}^{N-1}Y(t_{s}^{u},\Omega _{k})e^{j\Omega _{k}(n-t_{s}^{u})} \right ]</h5>
+				<br><br>
+			</p>
+		</div>		
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content Short Time Fourier Transform**********************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content Phase Vocoder*****************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+		<div id="contentPVEn">				
+			<p>
+				<a name="PV"></a>
+				<h1>PHASE VOCODER</h1>
+				<br>
+			</p>
+			
+			<p>
+				<h2>Time-scale Modification Stage:</h2>
+				<br>
+				
+				<u>Background - instantaneous phase/frequency definitions</u><br>
+				<br><br>	
+					
+				Any input signal x(t) can be considered as a sum of I(t) sinusoids with time-varying amplitudes A_sub_i(t), instantaneous phases phi_subi(t), and instantaneous frequencies omega_subi(t):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_sumOfSinusoids_b.gif">
+				<br>	
+				<h5 class="laTex">x(t) = \sum_{i=1}^{I(t)}A_{i}(t)e^{j\phi _{i}(t)}</h5>
+				<br>
+					
+				Analysis Instantaneous Phase of the i-th sinusoid at time t (phi_subi(0) is an arbitrary instantaneous phase):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_instantaneousPhase_b.gif">
+				<br>	
+				<h5 class="laTex">\phi _{i}(t) = \phi _{i}(0) + \int_{0}^{t}\omega _{i}(\tau )d\tau </h5>
+				<br>
+				
+				Analysis Instantaneous Frequency of the i-th sinusoid at time t (from above eqn):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_instFreq_b.gif">
+				<br>
+				<h5 class="laTex">\omega_{i}(t)</h5>
+				<br><br><br>
+				
+				<u>Basic Time-Scale Modifications in the frequency domain</u><br>
+				<br><br>
+				
+				Sinusoid Amplitudes (magnitudes) typically unchanged between Analysis and Synthesis, shown by:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_tsmAmp_b.gif">
+				<br>
+				<h5 class="laTex">\left | Y(t_{s}^{u},\Omega _{k}) \right | = \left | X(t_{a}^{u},\Omega _{k}) \right |</h5>
+				<br><br>
+				
+				Modification of the time-instants by constant factor alpha:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_tiMod_b.gif">
+				<br>
+				<h5 class="laTex">t_{s}^{u} = \alpha t_{s}^{u}</h5>
+				<br><br>
+				
+				Ideal Synthesis Phase (of time-scaled sinusoid i), eqn1:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_idealSynthPhase1_b.gif">
+				<br>
+				<h5 class="laTex">\phi _{s}(t_{s}^{u}) = \phi _{s}(0) + \int_{0}^{t_{s}^{u}}\omega _{i}(\tau /\alpha )d\tau</h5>
+				<br><br>
+				
+				Ideal Synthesis Phase (of time-scaled sinusoid i), eqn2:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_idealSynthPhase2_b.gif">
+				<br>
+				<h5 class="laTex">\phi _{s}(t_{s}^{u}) = \phi _{s}(0) + \alpha \int_{0}^{t_{a}^{u}}\omega _{i}(\tau )d\tau</h5>
+				<br><br>
+				
+				Ideal Synthesis Phase (of time-scaled sinusoid i), eqn3:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_idealSynthPhase3_b.gif">
+				<br>
+				<h5 class="laTex">\phi _{s}(t_{s}^{u}) = \phi _{s}(0) + \alpha [\phi _{i}(t_{a}^{u}) - \phi _{i}(0)]</h5>
+				<br><br>
+				
+				<u>Derivation of the Phase Propagation Equation</u><br><br><br>
+				
+				Instantaneous Frequency (Analysis):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_instFreqAna_b.gif">
+				<br>
+				<h5 class="laTex">\hat{\omega }_{k}(t_{a}^{u})</h5>
+				<br><br>
+				
+				Heterodyned Phase Increment:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_heterodynedPhaseInc_b.gif">
+				<br>
+				<h5 class="laTex">\triangle\Phi _{k}^{u} = \angle X(t_{a}^{u},\Omega _{k}) - \angle X(t_{a}^{u-1},\Omega _{k}) - R_{a}\Omega _{k}</h5>
+				<br><br>
+				
+				Principal Determination (normalize the phase increment to be within the range of +/- pi):<br>
+				Typically this involves simply using the atan2 (argument) function, but care must be taken to ensure the phase is in the correct range<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_principalDetermination_b.gif">
+				<br>
+				<h5 class="laTex">\triangle_{p}\Phi _{k}^{u}</h5>
+				<br><br> 
+				
+				Instantaneous Frequency Estimation (Analysis):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_instFreqUnwrap_b.gif">
+				<br>
+				<h5 class="laTex">\hat{\omega }_{k}(t_{a}^{u}) = \Omega _{k} + \frac{1}{R_{a}} \triangle_{p}\Phi _{k}^{u}</h5>
+				<br><br> 
+				
+				Phase Propagation Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phaseProp_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \angle Y(t_{s}^{u-1},\Omega _{k}) + R_{s}\hat{\omega }_{k}(t_{a}^{u})</h5>
+				<br><br> 
+				
+				
+				<u>Calculating the modified Synthesis Phase</u><br><br><br>
+				
+				Iterating the Phase Propagation Formula for successive integer values of u, eqn1:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phasePropItr1_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \angle Y(t_{s}^{0},\Omega _{k}) + \sum_{i=1}^{u}R_{s}\hat{\omega }_{k}(t_{a}^{i})</h5>
+				<br><br>  
+				
+				
+				Iterating the Phase Propagation Equation, eqn2:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phasePropItr2_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \phi _{s}(0,k) + \sum_{i=1}^{u}R_{s}\hat{\omega }_{k}(t_{a}^{i})</h5>
+				<br><br>
+				
+				
+				Estimated instantaneous frequency at time t(a)^i in channel k:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_instFreqEst_b.gif">
+				<br>
+				<h5 class="laTex">\hat{\omega }_{k}(t_{a}^{i})</h5>
+				<br><br>
+				
+				
+				Inserting the Instantaneous Frequency Equation into the iterated Phase Propagation Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phasePropItr3_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \phi _{s}(0,k) + \sum_{i=1}^{u}\left [ R_{s}\Omega _{k} + \frac{R_{s}}{R_{a}}\Delta _{p}\Phi _{k}^{i} \right ]</h5>
+				<br><br>
+				
+				
+				Using the principal value of the heterodyned phase increment with the iterated Phase Propagation Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phasePropUnwrap1_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \phi _{s}(0,k) + \alpha \sum_{i=1}^{u}\left [ \angle X(t_{a}^{i},\Omega _{k}) - \angle X(t_{a}^{i-1},\Omega _{k}) + 2m_{k}^{i}\pi  \right ]</h5>
+				<br><br>
+				
+				<u>Phase Unwrapping</u><br><br><br>
+				
+				Phase Unwrapping Factor Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phaseUnwrapFactor2_b.gif">
+				<br>
+				<h5 class="laTex">2m_{k}^{i}\pi = \Delta_{p} \Phi _{k}^{i} - \Delta \Phi _{k}^{i}</h5>
+				<br><br>
+				
+				
+				Unwrapped Phase Propagation Equation:<br><br>
+				Equation for the phase of the synthesis STFT at time t(s,u) as a funtion of the synthesis initial phase \phi _{s}(0,k) , the phase of the analysis STFT at time t(a,u),
+				the initial analysis phase, the modification factor alpha, and the series of phase unwrapping integers m(k,i)<br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phasePropUnwrap2_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \phi _{s}(0,k) + \alpha \left [ \angle X(t_{a}^{u},\Omega _{k}) - \angle X(0,\Omega _{k}) \right ] + \alpha \sum_{i=1}^{u}2m_{k}^{i}\pi</h5>
+				<br><br>
+				
+				<u>Scaled Phase Locking</u><br><br><br>
+				
+				<br><br><br><br><br>
+			</p>
+		</div>
+		
+		<div id="contentPVJp">				
+			<p>
+				<a name="PVj"></a>
+				<h1>フェーズ ボコーダ</h1>
+				<br>
+			</p>
+			
+			<p>
+				<h2>Time-scale Modification Stage:</h2>
+				<br>
+				
+				<u>Background - instantaneous phase/frequency definitions</u><br>
+				<br><br>	
+					
+				Any input signal x(t) can be considered as a sum of I(t) sinusoids with time-varying amplitudes A_sub_i(t), instantaneous phases phi_subi(t), and instantaneous frequencies omega_subi(t):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_sumOfSinusoids_b.gif">
+				<br>	
+				<h5 class="laTex">x(t) = \sum_{i=1}^{I(t)}A_{i}(t)e^{j\phi _{i}(t)}</h5>
+				<br>
+					
+				Analysis Instantaneous Phase of the i-th sinusoid at time t (phi_subi(0) is an arbitrary instantaneous phase):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_instantaneousPhase_b.gif">
+				<br>	
+				<h5 class="laTex">\phi _{i}(t) = \phi _{i}(0) + \int_{0}^{t}\omega _{i}(\tau )d\tau </h5>
+				<br>
+				
+				Analysis Instantaneous Frequency of the i-th sinusoid at time t (from above eqn):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_instFreq_b.gif">
+				<br>
+				<h5 class="laTex">\omega_{i}(t)</h5>
+				<br><br><br>
+				
+				<u>Basic Time-Scale Modifications in the frequency domain</u><br>
+				<br><br>
+				
+				Sinusoid Amplitudes (magnitudes) typically unchanged between Analysis and Synthesis, shown by:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_tsmAmp_b.gif">
+				<br>
+				<h5 class="laTex">\left | Y(t_{s}^{u},\Omega _{k}) \right | = \left | X(t_{a}^{u},\Omega _{k}) \right |</h5>
+				<br><br>
+				
+				Modification of the time-instants by constant factor alpha:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_tiMod_b.gif">
+				<br>
+				<h5 class="laTex">t_{s}^{u} = \alpha t_{s}^{u}</h5>
+				<br><br>
+				
+				Ideal Synthesis Phase (of time-scaled sinusoid i), eqn1:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_idealSynthPhase1_b.gif">
+				<br>
+				<h5 class="laTex">\phi _{s}(t_{s}^{u}) = \phi _{s}(0) + \int_{0}^{t_{s}^{u}}\omega _{i}(\tau /\alpha )d\tau</h5>
+				<br><br>
+				
+				Ideal Synthesis Phase (of time-scaled sinusoid i), eqn2:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_idealSynthPhase2_b.gif">
+				<br>
+				<h5 class="laTex">\phi _{s}(t_{s}^{u}) = \phi _{s}(0) + \alpha \int_{0}^{t_{a}^{u}}\omega _{i}(\tau )d\tau</h5>
+				<br><br>
+				
+				Ideal Synthesis Phase (of time-scaled sinusoid i), eqn3:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_idealSynthPhase3_b.gif">
+				<br>
+				<h5 class="laTex">\phi _{s}(t_{s}^{u}) = \phi _{s}(0) + \alpha [\phi _{i}(t_{a}^{u}) - \phi _{i}(0)]</h5>
+				<br><br>
+				
+				<u>Derivation of the Phase Propagation Equation</u><br><br><br>
+				
+				Instantaneous Frequency (Analysis):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_instFreqAna_b.gif">
+				<br>
+				<h5 class="laTex">\hat{\omega }_{k}(t_{a}^{u})</h5>
+				<br><br>
+				
+				Heterodyned Phase Increment:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_heterodynedPhaseInc_b.gif">
+				<br>
+				<h5 class="laTex">\triangle\Phi _{k}^{u} = \angle X(t_{a}^{u},\Omega _{k}) - \angle X(t_{a}^{u-1},\Omega _{k}) - R_{a}\Omega _{k}</h5>
+				<br><br>
+				
+				Principal Determination (normalize the phase increment to be within the range of +/- pi):<br>
+				Typically this involves simply using the atan2 (argument) function, but care must be taken to ensure the phase is in the correct range<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_principalDetermination_b.gif">
+				<br>
+				<h5 class="laTex">\triangle_{p}\Phi _{k}^{u}</h5>
+				<br><br> 
+				
+				Instantaneous Frequency Estimation (Analysis):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_instFreqUnwrap_b.gif">
+				<br>
+				<h5 class="laTex">\hat{\omega }_{k}(t_{a}^{u}) = \Omega _{k} + \frac{1}{R_{a}} \triangle_{p}\Phi _{k}^{u}</h5>
+				<br><br> 
+				
+				Phase Propagation Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phaseProp_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \angle Y(t_{s}^{u-1},\Omega _{k}) + R_{s}\hat{\omega }_{k}(t_{a}^{u})</h5>
+				<br><br> 
+				
+				
+				<u>Calculating the modified Synthesis Phase</u><br><br><br>
+				
+				Iterating the Phase Propagation Formula for successive integer values of u, eqn1:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phasePropItr1_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \angle Y(t_{s}^{0},\Omega _{k}) + \sum_{i=1}^{u}R_{s}\hat{\omega }_{k}(t_{a}^{i})</h5>
+				<br><br>  
+				
+				
+				Iterating the Phase Propagation Equation, eqn2:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phasePropItr2_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \phi _{s}(0,k) + \sum_{i=1}^{u}R_{s}\hat{\omega }_{k}(t_{a}^{i})</h5>
+				<br><br>
+				
+				
+				Estimated instantaneous frequency at time t(a)^i in channel k:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_instFreqEst_b.gif">
+				<br>
+				<h5 class="laTex">\hat{\omega }_{k}(t_{a}^{i})</h5>
+				<br><br>
+				
+				
+				Inserting the Instantaneous Frequency Equation into the iterated Phase Propagation Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phasePropItr3_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \phi _{s}(0,k) + \sum_{i=1}^{u}\left [ R_{s}\Omega _{k} + \frac{R_{s}}{R_{a}}\Delta _{p}\Phi _{k}^{i} \right ]</h5>
+				<br><br>
+				
+				
+				Using the principal value of the heterodyned phase increment with the iterated Phase Propagation Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phasePropUnwrap1_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \phi _{s}(0,k) + \alpha \sum_{i=1}^{u}\left [ \angle X(t_{a}^{i},\Omega _{k}) - \angle X(t_{a}^{i-1},\Omega _{k}) + 2m_{k}^{i}\pi  \right ]</h5>
+				<br><br>
+				
+				<u>Phase Unwrapping</u><br><br><br>
+				
+				Phase Unwrapping Factor Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phaseUnwrapFactor2_b.gif">
+				<br>
+				<h5 class="laTex">2m_{k}^{i}\pi = \Delta_{p} \Phi _{k}^{i} - \Delta \Phi _{k}^{i}</h5>
+				<br><br>
+				
+				
+				Unwrapped Phase Propagation Equation:<br><br>
+				Equation for the phase of the synthesis STFT at time t(s,u) as a funtion of the synthesis initial phase \phi _{s}(0,k) , the phase of the analysis STFT at time t(a,u),
+				the initial analysis phase, the modification factor alpha, and the series of phase unwrapping integers m(k,i)<br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/pv_phasePropUnwrap2_b.gif">
+				<br>
+				<h5 class="laTex">\angle Y(t_{s}^{u},\Omega _{k}) = \phi _{s}(0,k) + \alpha \left [ \angle X(t_{a}^{u},\Omega _{k}) - \angle X(0,\Omega _{k}) \right ] + \alpha \sum_{i=1}^{u}2m_{k}^{i}\pi</h5>
+				<br><br>
+				
+				<u>Scaled Phase Locking</u><br><br><br>
+				
+				<br><br><br><br><br>
+			</p>
+		</div>		
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content Phase Vocoder*************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content Doppler Shift*****************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+		<div id="contentDopplerEn">				
+			<p>
+				<a name="Doppler"></a>
+				<h1>Doppler Shift</h1>
+				<br>
+			</p>
+	
+			<p>
+				<h2>Doppler Shift (Doppler Effect) vector forumulation:</h2>
+				<br>
+					
+				The Doppler shift is a shift in observed frequency due to relative motion between source and reciever.<br><br>		
+					
+				Doppler Shift General Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/doppler_gen_b.gif">
+				<br>
+				<h5 class="laTex">f = f_{0}\left ( \frac{1 \pm \frac{v_{r}}{v_{prop}}}{1 \pm \frac{v_{s}}{v_{prop}}} \right )</h5>
+				<br><br>
+				
+				Doppler Shift Vector Definitions:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/doppler_vecdef_b.gif">
+				<br>
+				<!--<h5 class="laTex">\\
+				source\: position\: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \:  = \vec{x}_{s}\left ( t \right ),\: \: \: \: \vec{x}_{s} = \left ( x_{s1},x_{s2},x_{s3} \right )\\
+				receiver\: position\: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \:  = \vec{x}_{r}\left ( t \right ),\: \: \: \: \vec{x}_{r} = \left ( x_{r1},x_{r2},x_{r3} \right )\\
+				source\: velocity\: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \:  = \vec{v}_{s}\left ( \vec{x},t \right ),\: \vec{x} = \left ( x_{1},x_{2},x_{3} \right )\\
+				receiver\: velocity\: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \:  = \vec{v}_{r}\left ( \vec{x},t \right ),\: \vec{x} = \left ( x_{1},x_{2},x_{3}
+				\right )\\
+				projected\: source\: position = \vec{x}_{sr}\: \: \: \: \: \: \: \: \: \: \: \: \: \: \:  = \vec{x}_{r} - \vec{x}_{s}\\
+				projected\: source\: velocity\:  = \vec{v}_{sr}</h5>-->
+				<br><br>
+				
+				The Orthogonal projection of x onto y:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/doppler_orthog_xy_b.gif">
+				<br>
+				<h5 class="laTex">P_{\vec{y}}(\vec{x}) = \frac{\left \langle \vec{x},\vec{y} \right \rangle}{\left \| \vec{y} \right \|^{2}}\vec{y}\: \equiv
+				\: \frac{\vec{x}^{T}\vec{y}}{\vec{y}^{T}\vec{y}}\vec{y}</h5>
+				<br><br>
+				
+				
+				The Projected Source Velocity:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/doppler_projectedv_b.gif">
+				<br>
+				<h5 class="laTex">\vec{v}_{sr} = P_{\vec{x}_{sr}}(\vec{v}_{s}) = \frac{\left \langle \vec{v}_{s},\vec{x}_{sr} \right \rangle}{\left \| \vec{x}_{sr} \right \|^{2}}\vec{x}_{sr}\: =
+				\: \frac{\left \langle \vec{v}_{s},\vec{x}_{r}-\vec{x}_{s} \right \rangle}{\left \| \vec{x}_{r}-\vec{x}_{s} \right \|^{2}}\left ( \vec{x}_{r}-\vec{x}_{s} \right )</h5>
+				<br><br>
+			</p>		
+		</div>
+		
+		<div id="contentDopplerJp">				
+			<p>
+				<a name="Dopplerj"></a>
+				<h1>ドプラー シフト</h1>
+				<br>
+			</p>
+	
+			<p>
+				<h2>Doppler Shift (Doppler Effect) vector forumulation:</h2>
+				<br>
+					
+				The Doppler shift is a shift in observed frequency due to relative motion between source and reciever.<br><br>		
+					
+				Doppler Shift General Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/doppler_gen_b.gif">
+				<br>
+				<h5 class="laTex">f = f_{0}\left ( \frac{1 \pm \frac{v_{r}}{v_{prop}}}{1 \pm \frac{v_{s}}{v_{prop}}} \right )</h5>
+				<br><br>
+				
+				Doppler Shift Vector Definitions:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/doppler_vecdef_b.gif">
+				<br>
+				<!--<h5 class="laTex">\\
+				source\: position\: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \:  = \vec{x}_{s}\left ( t \right ),\: \: \: \: \vec{x}_{s} = \left ( x_{s1},x_{s2},x_{s3} \right )\\
+				receiver\: position\: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \:  = \vec{x}_{r}\left ( t \right ),\: \: \: \: \vec{x}_{r} = \left ( x_{r1},x_{r2},x_{r3} \right )\\
+				source\: velocity\: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \:  = \vec{v}_{s}\left ( \vec{x},t \right ),\: \vec{x} = \left ( x_{1},x_{2},x_{3} \right )\\
+				receiver\: velocity\: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \: \:  = \vec{v}_{r}\left ( \vec{x},t \right ),\: \vec{x} = \left ( x_{1},x_{2},x_{3}
+				\right )\\
+				projected\: source\: position = \vec{x}_{sr}\: \: \: \: \: \: \: \: \: \: \: \: \: \: \:  = \vec{x}_{r} - \vec{x}_{s}\\
+				projected\: source\: velocity\:  = \vec{v}_{sr}</h5>-->
+				<br><br>
+				
+				The Orthogonal projection of x onto y:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/doppler_orthog_xy_b.gif">
+				<br>
+				<h5 class="laTex">P_{\vec{y}}(\vec{x}) = \frac{\left \langle \vec{x},\vec{y} \right \rangle}{\left \| \vec{y} \right \|^{2}}\vec{y}\: \equiv
+				\: \frac{\vec{x}^{T}\vec{y}}{\vec{y}^{T}\vec{y}}\vec{y}</h5>
+				<br><br>
+				
+				
+				The Projected Source Velocity:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/doppler_projectedv_b.gif">
+				<br>
+				<h5 class="laTex">\vec{v}_{sr} = P_{\vec{x}_{sr}}(\vec{v}_{s}) = \frac{\left \langle \vec{v}_{s},\vec{x}_{sr} \right \rangle}{\left \| \vec{x}_{sr} \right \|^{2}}\vec{x}_{sr}\: =
+				\: \frac{\left \langle \vec{v}_{s},\vec{x}_{r}-\vec{x}_{s} \right \rangle}{\left \| \vec{x}_{r}-\vec{x}_{s} \right \|^{2}}\left ( \vec{x}_{r}-\vec{x}_{s} \right )</h5>
+				<br><br>
+			</p>		
+		</div>
+
+
+	    <!--*******************************************************************************************************************************-->
+        <!--*****content Newton-Raphson Divisionv******************************************************************************************-->
+        <!--*******************************************************************************************************************************-->              
+            <div id="contentNewtonDivEn">
+                  <p>                            
+                            <a name="NewtonDiv"></a>             
+                            <h1>Newton-Raphson Division</h1>
+                  </p>
+                                                                                                                             
+                  <!--<p>
+                            <img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+                            <br>
+                  </p>-->
+                                         
+                  <p>
+                            <h3>Newton-Raphson Division Equations:</h3>
+                            <br>
+                            Newton-Raphson Basic Definitions:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_basicDef1_b.gif">
+                            <br>
+                            <h5 class="laTex">Q = \frac{N}{D}; X = \frac{1}{D}; X = (X_{1} ... X_{s}), s=iterations;\:  \: \therefore \: Q = NX_{s}</h5>
+                            <br><br>
+             
+                            Newton-Raphson Division Iteration:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_newtonRaphsonIter1_b.gif">
+                            <br>
+                            <h5 class="laTex">X_{i+1} = X_{i} + X_{i}(1 - DX_{i})</h5>
+                            <br><br>
+                           
+                            Newton-Raphson Initial Approximation:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_initialApprox_b.gif">
+                            <br>
+                            <h5 class="laTex">X_{0} = \frac{48}{17} - \frac{32}{17}D</h5>
+                            <br><br>
+                           
+                            <h3>Newton-Raphson Division Derivation:</h3>
+                            <br>
+                               
+                            Newton-Raphson Iteration Devivation 1:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_nrIterDerivation1_b.gif">
+                            <br>
+                            <h5 class="laTex">let \: f(x) = \frac{1}{x} - D \: \Rightarrow  \: f(x)\mid _{x=\frac{1}{D}} \: = D - D = 0</h5>
+                            <br><br>
+                           
+                            Newton-Raphson Iteration Devivation 2:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_nrIterDerivation2_b.gif">
+                            <br>
+
+                            <h5 class="laTex">f'(x) = \frac{d}{dx}\left ( \frac{1}{x} - D \right ) = \frac{-\frac{d}{dx}\left ( x \right )}{x^{2}} = -\frac{1}{x^{2}}</h5>
+                            <br><br>
+                           
+                            Newton-Raphson Iteration Devivation 3:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_nrIterDerivation3_b.gif">
+                            <br>
+                            <h5 class="laTex">X_{i+1} = X_{i} - \frac{f(X_{i})}{f'(X_{i})} = X_{i} - \frac{\frac{1}{X_{i}}-D}{\frac{-1}{X_{i}^{2}}} = X_{i} + X_{i}(1 - DX_{i})</h5>
+                            <br><br>              
+                           
+                  </p>                                         
+              </div>
+ 
+              <div id="contentNewtonDivJp">
+                  <p>                            
+                            <a name="NewtonDivj"></a>             
+                            <h1>ニュートン ラプソン除算</h1>
+                  </p>
+                 
+                  <!--<p>
+                            <img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+                            <br>
+                  </p>-->
+                 
+                  <p>
+                            <h3>ニュートン ラプソン除算の方程式:</h3
+                            <br>
+                            ニュートン ラプソン Basic Definitions:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_basicDef1_b.gif">
+                            <br>
+                            <h5 class="laTex">Q = \frac{N}{D}; X = \frac{1}{D}; X = (X_{1} ... X_{s}), s=iterations;\:  \: \therefore \: Q = NX_{s}</h5>
+                            <br><br>
+             
+                            ニュートン ラプソン除算の反復:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_newtonRaphsonIter1_b.gif">
+                            <br>
+                            <h5 class="laTex">X_{i+1} = X_{i} + X_{i}(1 - DX_{i})</h5>
+                            <br><br>
+                           
+                            ニュートン ラプソン除算の最初の近似値:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_initialApprox_b.gif">
+                            <br>
+                            <h5 class="laTex">X_{0} = \frac{48}{17} - \frac{32}{17}D</h5>
+                            <br><br>
+                         
+                            <h3>ニュートン ラプソン除算の派生:</h3>
+                            <br>
+                               
+                            ニュートン ラプソン除算の反復の派生1:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_nrIterDerivation1_b.gif">
+                            <br>
+                            <h5 class="laTex">let \: f(x) = \frac{1}{x} - D \: \Rightarrow  \: f(x)\mid _{x=\frac{1}{D}} \: = D - D = 0</h5>
+                            <br><br>
+                           
+                            ニュートン ラプソン除算の反復の派生2:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_nrIterDerivation2_b.gif">
+                            <br>
+                            <h5 class="laTex">f'(x) = \frac{d}{dx}\left ( \frac{1}{x} - D \right ) = \frac{-\frac{d}{dx}\left ( x \right )}{x^{2}} = -\frac{1}{x^{2}}</h5>
+                            <br><br>
+                           
+                            ニュートン ラプソン除算の反復の派生3:<br><br>
+                            <img class="odmkGFX_eqn" src="odmk_eqn/NRDiv_nrIterDerivation3_b.gif">
+                            <br>
+                            <h5 class="laTex">X_{i+1} = X_{i} - \frac{f(X_{i})}{f'(X_{i})} = X_{i} - \frac{\frac{1}{X_{i}}-D}{\frac{-1}{X_{i}^{2}}} = X_{i} + X_{i}(1 - DX_{i})</h5>
+                            <br><br>              
+                           
+                  </p>
+              </div>
+			  
+			<!--*******************************************************************************************************************************-->
+			<!--*****end content Newton Division*****************************************************************************************************-->
+			<!--*******************************************************************************************************************************-->
+	
+	
+			<!--*******************************************************************************************************************************-->
+			<!--*****content General Wave Equation*********************************************************************************************-->
+			<!--*******************************************************************************************************************************-->		
+			<div id="contentGeneralWaveEqnEn">
+				<p>			
+				<a name="generalWaveEqn"></a> 	
+				<h1>General Wave Equatioin</h1>
+				</p>
+											
+				<p>
+				<h3>1D General Wave Equation</h3>
+				<br>
+		
+				General 1D Wave Equation:<br>
+				For a scalar function u = u(x1, x2, ..., xn, t)<br>
+				We consider only 1 independent spacial variable, x. <br>
+				y is a dependent variable representing a 2nd space dimension, ex. a string vibrating in a 2D plane<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/wavEqn_gen1D_b.gif">
+				<br>
+				<h5 class="laTex">\frac{\partial ^{2}y}{\partial x^{2}} = \frac{1}{c^{2}}\frac{\partial ^{2}y}{\partial t^{2}}</h5>
+				<br><br>
+				
+				General 3D Wave Equation:<br>
+				For a scalar function u = u(x1, x2, ..., xn, t)<br><br>				
+				<img class="odmkGFX_eqn" src="odmk_eqn/wavEqn_gen_b.gif">
+				<br>
+				<h5 class="laTex">\triangledown ^{2}u = \frac{1}{c^{2}}\frac{\partial ^{2}u}{\partial t^{2}}</h5>
+				<br><br>
+				where c is a fixed constant, and del squared is the spacial Laplacian, defined in cartesian coordinates as:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/laplacian_b.gif">
+				<br>
+				<h5 class="laTex">\triangle = \triangledown ^{2} = \frac{\partial ^{2}}{\partial x^{2}} + \frac{\partial ^{2}}{\partial y^{2}} + \frac{\partial ^{2}}{\partial z^{2}}</h5>
+				<br><br>
+			
+			</p>			
+		</div>
+
+		<div id="contentGeneralWaveEqnJp">
+			<p>			
+			<a name="generalWaveEqnj"></a> 	
+			<h1>波動方程式</h1>
+			</p>
+			
+			<!--<p>
+			<img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+			<br>
+			</p>-->
+			
+			<p>
+			<h3>1D 一般の波動方程式</h3>
+			<br>
+	
+			1D 波動方程式:<br>
+			For a scalar function u = u(x1, x2, ..., xn, t)<br>
+			We consider only 1 independent spacial variable, x. <br>
+			y is a dependent variable representing a 2nd space dimension, ex. a string vibrating in a 2D plane<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/wavEqn_gen1D_b.gif">
+			<br>
+			<h5 class="laTex">\frac{\partial ^{2}y}{\partial x^{2}} = \frac{1}{c^{2}}\frac{\partial ^{2}y}{\partial t^{2}}</h5>
+			<br><br>
+			
+			3D 波動方程式:<br>
+			For a scalar function u = u(x1, x2, ..., xn, t)<br><br>				
+			<img class="odmkGFX_eqn" src="odmk_eqn/wavEqn_gen_b.gif">
+			<br>
+			<h5 class="laTex">\triangledown ^{2}u = \frac{1}{c^{2}}\frac{\partial ^{2}u}{\partial t^{2}}</h5>
+			<br><br>
+			where c is a fixed constant, and del squared is the spacial Laplacian, defined in cartesian coordinates as:<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/laplacian_b.gif">
+			<br>
+			<h5 class="laTex">\triangle = \triangledown ^{2} = \frac{\partial ^{2}}{\partial x^{2}} + \frac{\partial ^{2}}{\partial y^{2}} + \frac{\partial ^{2}}{\partial z^{2}}</h5>
+			<br><br>
+			
+			</p>
+		</div>
+		<!--*******************************************************************************************************************************-->
+		<!--*****end content General Wave Equation*****************************************************************************************-->
+		<!--*******************************************************************************************************************************-->
+
+
+		<!--*******************************************************************************************************************************-->
+		<!--*****begin content Acoustic Wave Equation**************************************************************************************-->
+		<!--*******************************************************************************************************************************-->		
+		<div id="contentAcousticWaveEqnEn">
+			<p>			
+			<a name="acousticWaveEqn"></a> 	
+			<h1>Acoustic Wave Equation</h1>
+			<br>
+			</p>
+									
+			<!--<p>
+			<img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+			<br>
+			</p>-->
+	
+			<p>
+			<h2>1D Acoustic Wave Equation</h2>
+			<br>
+			The 1D Wave Equation describes the behaviour of sound in matter in one dimension (position x)<br>
+			where p is the acoustic pressure (the local deviation from ambient pressure), and c is the speed of sound:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_1Dx_b.gif">
+			<br>
+			<h5 class="laTex">\frac{\partial^{2} p}{\partial x^{2}} - \frac{1}{c^{2}}\frac{\partial^{2} p}{\partial t^{2}} = 0</h5>
+			<br><br>
+	
+			<h3>1D Wave Equation General Solution</h3><br>
+			Provided that the speed c is a constant, not dependent on frequency (dispersionless case), then the most general solution is:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_1DxGenSol_b.gif">
+			<br>
+			<h5 class="laTex">p = f(ct-x) + g(ct + x)</h5>
+			<br><br>
+			where f and g are any two twice-differentiable functions. This may be pictured as the superposition of two waveforms of
+			arbitrary profile, one (f) travelling up the x-axis and the other (g) down the x-axis at the speed c.
+			<br><br>
+			
+			<h3>1D Wave Equation Sinusoid Solution (sine travelling in x direction)</h3><br>
+			The particular case of a sinusoidal wave travelling in one direction is obtained by choosing either f or g to be a
+			sinusoid, and the other to be zero, where \omega is the angular frequency of the wave and k is its wave number:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_1DxSinSol_b.gif">
+			<br>
+			<h5 class="laTex">p = p_{0}sin(\omega t\mp kx)</h5>
+			<br><br>
+			</p>
+			
+			<p>
+			<h2>3D Acoustic Wave Equation:</h2>
+			<br><br>
+			<h3>3D Wave Equation</h3><br>
+			the wave equation that describes the behaviour of sound in matter in three dimensions:<br>
+			where \triangledown^{2}, is the Laplace operator, p is the acoustic pressure (local deviation from ambient pressure), and c is the speed of sound.<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3D_b.gif">
+			<br>
+			<h5 class="laTex">\triangledown ^{2}p - \frac{1}{c^{2}}\frac{\partial ^{2}p}{\partial t^{2}} = 0</h5>
+			<br><br>
+		
+			<h3>3D Wave Equation General Solutions</h3><br>
+			The following solutions are obtained by separation of variables in different coordinate systems.<br>
+			They are phasor solutions, that is they have an implicit time-dependence factor of e^{i\omega t}:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3Deiomegat_b.gif">
+			<br>
+			<h5 class="laTex">e^{i\omega t}</h5>
+			<br><br>
+			
+			definitions:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3Ddef1_b.gif">
+			<br>
+			<h5 class="laTex">\\Time\: Dependence\:  Factor\equiv e^{i\omega t} \\<br>
+			Angular\: Frequency\:\:\:\:\:\:\:\:\:\:\:   \equiv\:\omega =  2\pi f\\<br>
+			Wave\: Number\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\: \equiv  k = \omega/c</h5>
+			<br><br>
+					
+			The explicit time dependence is given by:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DtimeDependence_b.gif">
+			<br>
+			<h5 class="laTex">p(r,t,k) = Real\left [ p(r,k)e^{i\omega t} \right ]</h5>
+			<br><br>
+			
+			<h3>Cartesian Coordinates</h3><br>
+			3D Wave Equation General Solution in Cartesian Coordinates:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DSol_cartesian_b.gif">
+			<br>
+			<h5 class="laTex">p(r,k) = Ae^{\pm ikr}</h5>
+			<br><br>
+	
+			<h3>Cylindrical Coordinates</h3><br>
+			3D Wave Equation General Solution in Cylindrical Coordinates:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DSol_cylinder_b.gif">
+			<br>
+			<h5 class="laTex">p(r,k) = AH_{0}^{(1)}(kr)+BH_{0}^{(2)}(kr)</h5>
+			<br><br>
+			where the asymptotic approximations to the Hankel functions, when kr -> \infty , are:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DSol_cylinder_hankelApprox1_b.gif">
+			<br>
+			<h5 class="laTex">H_{0}^{(1)}(kr) \simeq \sqrt{\frac{2}{\pi kr}}e^{i(kr-\pi /4)}</h5>
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DSol_cylinder_hankelApprox2_b.gif">
+			<br>
+			<h5 class="laTex">H_{0}^{(2)}(kr) \simeq \sqrt{\frac{2}{\pi kr}}e^{-i(kr-\pi /4)}</h5>
+			<br><br>
+		
+			<h3>Spherical Coordinates</h3><br>
+			3D Wave Equation General Solution in Spherical Coordinates:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DSol_sphere_b.gif">
+			<br>
+			<h5 class="laTex">p(r,k) = \frac{A}{r}e^{\pm ikr}</h5>
+			<br><br>       
+			Depending on the chosen Fourier convention, one of these represents an outward travelling wave and the other an unphysical inward travelling wave.
+			The inward travelling solution wave is only unphysical because of the singularity that occurs at r=0; inward travelling waves do exist.<br>
+			<br><br>
+			</p>
+		</div>
+
+		<div id="contentAcousticWaveEqnJp">
+			<p>			
+			<a name="acousticWaveEqnj"></a> 	
+			<h1>音響の波動方程式</h1>
+			<br>
+			</p>
+			
+			<!--<p>
+			<img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+			<br>
+			</p>-->
+			
+			<p>
+			<h2>1D音響の波動方程式</h2>
+			<br>
+			The 1D波動方程式 describes the behaviour of sound in matter in one dimension (position x)<br>
+			where p is the アコースティック pressure (the local deviation from ambient pressure), and c is the speed of sound:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_1Dx_b.gif">
+			<br>
+			<h5 class="laTex">\frac{\partial^{2} p}{\partial x^{2}} - \frac{1}{c^{2}}\frac{\partial^{2} p}{\partial t^{2}} = 0</h5>
+			<br><br>
+	
+			<h3>1D波動方程式General Solution</h3><br>
+			Provided that the speed c is a constant, not dependent on frequency (dispersionless case), then the most general solution is:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_1DxGenSol_b.gif">
+			<br>
+			<h5 class="laTex">p = f(ct-x) + g(ct + x)</h5>
+			<br><br>
+			where f and g are any two twice-differentiable functions. This may be pictured as the superposition of two waveforms of
+			arbitrary profile, one (f) travelling up the x-axis and the other (g) down the x-axis at the speed c.
+			<br><br>
+			
+			<h3>1D波動方程式Sinusoid Solution (sine travelling in x direction)</h3><br>
+			The particular case of a sinusoidal wave travelling in one direction is obtained by choosing either f or g to be a
+			sinusoid, and the other to be zero, where \omega is the angular frequency of the wave and k is its wave number:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_1DxSinSol_b.gif">
+			<br>
+			<h5 class="laTex">p = p_{0}sin(\omega t\mp kx)</h5>
+			<br><br>
+			</p>
+	    
+			<p>
+			<h2>3D Acoustic波動方程式</h2>
+			<br><br>
+			<h3>3D波動方程式</h3><br>
+			物質のなかで三次元で音響の動作を記述するの波動方程式:<br>
+			where \triangledown^{2}, is the Laplace operator, p is the アコースティック pressure (local deviation from ambient pressure), and c is the speed of sound.<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3D_b.gif">
+			<br>
+			<h5 class="laTex">\triangledown ^{2}p - \frac{1}{c^{2}}\frac{\partial ^{2}p}{\partial t^{2}} = 0</h5>
+			<br><br>
+		
+			<h3>3D波動方程式 General Solutions</h3><br>
+			The following solutions are obtained by separation of variables in different coordinate systems.<br>
+			They are phasor solutions, that is they have an implicit time-dependence factor of e^{i\omega t}:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3Deiomegat_b.gif">
+			<br>
+			<h5 class="laTex">e^{i\omega t}</h5>
+			<br><br>
+			
+			definitions:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3Ddef1_b.gif">
+			<br>
+			<h5 class="laTex">\\Time\: Dependence\:  Factor\equiv e^{i\omega t} \\<br>
+			Angular\: Frequency\:\:\:\:\:\:\:\:\:\:\:   \equiv\:\omega =  2\pi f\\<br>
+			Wave\: Number\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\:\: \equiv  k = \omega/c</h5>
+			<br><br>
+					
+			The explicit time dependence is given by:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DtimeDependence_b.gif">
+			<br>
+			<h5 class="laTex">p(r,t,k) = Real\left [ p(r,k)e^{i\omega t} \right ]</h5>
+			<br><br>
+		
+			<h3>Cartesian Coordinates</h3><br>
+			3D波動方程式 General Solution in Cartesian Coordinates:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DSol_cartesian_b.gif">
+			<br>
+			<h5 class="laTex">p(r,k) = Ae^{\pm ikr}</h5>
+			<br><br>
+	
+			<h3>Cylindrical Coordinates</h3><br>
+			3D波動方程式 General Solution in Cylindrical Coordinates:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DSol_cylinder_b.gif">
+			<br>
+			<h5 class="laTex">p(r,k) = AH_{0}^{(1)}(kr)+BH_{0}^{(2)}(kr)</h5>
+			<br><br>
+			where the asymptotic approximations to the Hankel functions, when kr -> \infty , are:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DSol_cylinder_hankelApprox1_b.gif">
+			<br>
+			<h5 class="laTex">H_{0}^{(1)}(kr) \simeq \sqrt{\frac{2}{\pi kr}}e^{i(kr-\pi /4)}</h5>
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DSol_cylinder_hankelApprox2_b.gif">
+			<br>
+			<h5 class="laTex">H_{0}^{(2)}(kr) \simeq \sqrt{\frac{2}{\pi kr}}e^{-i(kr-\pi /4)}</h5>
+			<br><br>
+		
+			<h3>Spherical Coordinates</h3><br>
+			3D波動方程式 General Solution in Spherical Coordinates:
+			<br><br>
+			<img class="odmkGFX_eqn" src="odmk_eqn/acousticWaveEqn_3DSol_sphere_b.gif">
+			<br>
+			<h5 class="laTex">p(r,k) = \frac{A}{r}e^{\pm ikr}</h5>
+			<br><br>       
+			Depending on the chosen Fourier convention, one of these represents an outward travelling wave and the other an unphysical inward travelling wave.
+			The inward travelling solution wave is only unphysical because of the singularity that occurs at r=0; inward travelling waves do exist.<br>
+			<br><br>
+			</p>
+		</div>
+		<!--*******************************************************************************************************************************-->
+		<!--*****end content Acoustic Wave Equation****************************************************************************************-->
+		<!--*******************************************************************************************************************************-->
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content Spherical Harmonics***********************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->		
+<!--		<div id="contentSphericalHarmonicsEn">
+			<p>			
+				<a name="sphericalHarmonics"></a> 	
+				<h1>Quantum Mechanics</h1>
+			</p>
+											
+			<p>
+				<h3>Dirac's Equation</h3>
+				<br>
+				
+				Dirac's Equation:<br>
+				The original formulation of Dirac's equation<br><br>				
+				<img class="odmkGFX_eqn" src="odmk_eqn/diracEqn1_b.gif">
+				<br>
+				<h5 class="laTex">\left ( \beta mc^{2} + c(\alpha _{1}p_{1}+\alpha _{2}p_{2}+\alpha _{3}p_{3}) \right )\psi (x,t) = i\hbar\frac{\partial \psi (x,t)}{\partial t}</h5>
+				<br><br>					
+			</p>			
+	    </div>
+
+		<div id="contentSphericalHarmonicsJp">
+			<p>			
+				<a name="sphericalHarmonicsj"></a>
+				<h1>球面調和関数</h1>
+			</p>
+			
+			<!--<p>
+			<img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+			<br>
+			</p>
+			
+			<p>
+				<h3>球面調和関数</h3>
+				<br>
+	
+				球面調和関数:<br>
+				The original formulation of Dirac's equation<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/diracEqn1_b.gif">
+				<br>
+				<h5 class="laTex">\left ( \beta mc^{2} + c(\alpha _{1}p_{1}+\alpha _{2}p_{2}+\alpha _{3}p_{3}) \right )\psi (x,t) = i\hbar\frac{\partial \psi (x,t)}{\partial t}</h5>
+				<br><br>
+										
+			</p>		
+		</div>-->
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content Spherical Harmonics*******************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****begin content ElectroMagnetism*********************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->	
+		
+		<div id="contentElectroMagEn">
+			<p>			
+				<a name="electroMag"></a> 	
+				<h1>Electromagnetics</h1>
+				(Maxwell's Equations)
+			</p>
+			
+			<p>
+				<img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+				<br>
+			</p>
+			
+			<p>
+				<h3>Maxwell's Equations - Scientific notation, Differential Form</h3>
+				<br>
+	
+				Gauss's Law:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_gaussLaw_sci_diff_b.gif">
+				<br>
+				<h5 class="laTex">\nabla \cdot E = \frac{\rho }{\varepsilon _{0}}</h5>
+				<br><br>
+			
+				Gauss's Law for Magnetism:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_gaussLawMag_sci_diff_b.gif">
+				<br>
+				<h5 class="laTex">\nabla \cdot B = 0</h5>
+				<br><br>
+			
+				Maxwell-Faraday Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_faraday_sci_diff_b.gif">
+				<br>
+				<h5 class="laTex">\nabla \times E = -\frac{\partial B}{\partial t}</h5>
+				<br><br>
+			
+				Ampère's circuital law (with Maxwell's correction):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_amperes_sci_diff_b.gif">
+				<br>
+				<h5 class="laTex">\nabla \times B = \mu _{0}\left ( J + \varepsilon _{0}\frac{\partial E}{\partial t} \right )</h5>
+				<br><br>
+			</p>
+			
+			<p>			
+				<h3>Maxwell's Equations - Scientific notation, Integral Form</h3>
+				<br>
+			
+				Gauss's Law:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_gaussLaw_sci_int_b.gif">
+				<br>
+				<h5 class="laTex">\oint_{\partial \Omega }^{\, }E \cdot dS = \frac{Q}{\varepsilon _{0}} = \frac{1}{\varepsilon _{0}}\iiint_{\Omega \, }^{\, } \rho dV</h5>
+				<br><br>
+			
+				Gauss's Law for Magnetism:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_gaussLawMag_sci_int_b.gif">
+				<br>
+				<h5 class="laTex">\oint_{\partial \Omega }^{\, }B\cdot dS = 0</h5>
+				<br><br>
+			
+				Maxwell-Faraday Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_faraday_sci_int_b.gif">
+				<br>
+				<h5 class="laTex">\oint_{\partial \Sigma  }^{\, }E\cdot d\ell = -\frac{d}{dt}\iint_{\Sigma }^{\, }B\cdot dS</h5>
+				<br><br>
+			
+				Ampère's circuital law (with Maxwell's correction):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_amperes_sci_int_b.gif">
+				<br>
+				<h5 class="laTex">\oint_{\partial \Sigma  }^{\, }B\cdot d\ell = \mu _{0}\iint_{\Sigma }^{\, }\left ( J + \varepsilon _{0}\frac{\partial E}{\partial t} \right )\cdot dS</h5>
+				<br><br>
+			
+				<br><br><br>
+			</p>
+	    </div>
+
+		<div id="contentElectroMagJp">
+			<p>
+				<a name="electroMagj"></a> 	
+				<h1>電磁気</h1>
+				(マクスウェル 方程式)
+			</p>
+			
+			<p>
+				<img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+				<br>
+			</p>
+			
+			<p>
+				<h3>マクスウェル 方程式 - 科学的記数法, 微分形式</h3>
+				<br>
+	
+				Gauss's Law:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_gaussLaw_sci_diff_b.gif">
+				<br>
+				<h5 class="laTex">\nabla \cdot E = \frac{\rho }{\varepsilon _{0}}</h5>
+				<br><br>
+			
+				Gauss's Law for Magnetism:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_gaussLawMag_sci_diff_b.gif">
+				<br>
+				<h5 class="laTex">\nabla \cdot B = 0</h5>
+				<br><br>
+			
+				Maxwell-Faraday Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_faraday_sci_diff_b.gif">
+				<br>
+				<h5 class="laTex">\nabla \times E = -\frac{\partial B}{\partial t}</h5>
+				<br><br>
+			
+				Ampère's circuital law (with Maxwell's correction):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_amperes_sci_diff_b.gif">
+				<br>
+				<h5 class="laTex">\nabla \times B = \mu _{0}\left ( J + \varepsilon _{0}\frac{\partial E}{\partial t} \right )</h5>
+				<br><br>
+			</p>
+			
+			<p>			
+				<h3>マクスウェル 方程式 - 科学的記数法, 積分形式</h3>
+				<br>
+			
+				Gauss's Law:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_gaussLaw_sci_int_b.gif">
+				<br>
+				<h5 class="laTex">\oint_{\partial \Omega }^{\, }E \cdot dS = \frac{Q}{\varepsilon _{0}} = \frac{1}{\varepsilon _{0}}\iiint_{\Omega \, }^{\, } \rho dV</h5>
+				<br><br>
+			
+				Gauss's Law for Magnetism:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_gaussLawMag_sci_int_b.gif">
+				<br>
+				<h5 class="laTex">\oint_{\partial \Omega }^{\, }B\cdot dS = 0</h5>
+				<br><br>
+			
+				Maxwell-Faraday Equation:<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_faraday_sci_int_b.gif">
+				<br>
+				<h5 class="laTex">\oint_{\partial \Sigma  }^{\, }E\cdot d\ell = -\frac{d}{dt}\iint_{\Sigma }^{\, }B\cdot dS</h5>
+				<br><br>
+			
+				Ampère's circuital law (with Maxwell's correction):<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/maxwellEqn_amperes_sci_int_b.gif">
+				<br>
+				<h5 class="laTex">\oint_{\partial \Sigma  }^{\, }B\cdot d\ell = \mu _{0}\iint_{\Sigma }^{\, }\left ( J + \varepsilon _{0}\frac{\partial E}{\partial t} \right )\cdot dS</h5>
+				<br><br>
+			
+				<br><br><br>
+			</p>
+	    </div>		
+			
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content ElectroMagnetism*********************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->			
+
+
+	    <!--*******************************************************************************************************************************-->
+		<!--*****content QM*************************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->		
+		<div id="contentQuantumMechEn">
+			<p>			
+				<a name="QuantumMech"></a> 	
+				<h1>Quantum Mechanics</h1>
+			</p>
+											
+			<p>
+				<h3>Dirac's Equation</h3>
+				<br>
+				
+				Dirac's Equation:<br>
+				The original formulation of Dirac's equation<br><br>				
+				<img class="odmkGFX_eqn" src="odmk_eqn/diracEqn1_b.gif">
+				<br>
+				<h5 class="laTex">\left ( \beta mc^{2} + c(\alpha _{1}p_{1}+\alpha _{2}p_{2}+\alpha _{3}p_{3}) \right )\psi (x,t) = i\hbar\frac{\partial \psi (x,t)}{\partial t}</h5>
+				<br><br>					
+			</p>			
+	    </div>
+
+		<div id="contentQMJp">
+			<p>			
+				<a name="QuantumMechj"></a>
+				<h1>量子力学</h1>
+			</p>
+			
+			<!--<p>
+			<img class="odmkGFX" src="gfx/220px-VFPt_charges_plus_minus.jpg">
+			<br>
+			</p>-->
+			
+			<p>
+				<h3>Diracの方程式</h3>
+				<br>
+	
+				Dirac's Equation:<br>
+				The original formulation of Dirac's equation<br><br>
+				<img class="odmkGFX_eqn" src="odmk_eqn/diracEqn1_b.gif">
+				<br>
+				<h5 class="laTex">\left ( \beta mc^{2} + c(\alpha _{1}p_{1}+\alpha _{2}p_{2}+\alpha _{3}p_{3}) \right )\psi (x,t) = i\hbar\frac{\partial \psi (x,t)}{\partial t}</h5>
+				<br><br>
+										
+			</p>		
+		</div>
+	    <!--*******************************************************************************************************************************-->
+		<!--*****end content QM************************************************************************************************************-->
+	    <!--*******************************************************************************************************************************-->
+		
+			
+		<!--</div>-->
+	    <!--*****end content main**********************************************************************************************************-->			
+		
+
+        <div id="foot" class="cf">
+		    <div>
+                <p>
+						<img class="odmkGFX_sub" src="gfx/ODMK_ODE_MOD8.jpg">
+				</p>
+		    </div>
+			<div>
+                <p>
+						::((o))::
+				</p>
+		    </div>
+        </div>
+    <!--*****close body div****-->
+    </div>
+</body>
 </html>
+
+
+	<!--***********************************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/*****Main end*************************************************************************************************************************/
+	/*****@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*****/
+	/************************************************************************************************************************************-->
