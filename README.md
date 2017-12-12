@@ -1,2 +1,2 @@
 # odmk.github.io
-the Odorous Beast From UB313 Earth-Life Blog
+the Beast Ov Eris UB313 Earth-Life Blog
